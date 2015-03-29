@@ -1,0 +1,489 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"setTabs",
+				"setTabsSelectedTabSetter"
+			],
+			[
+				"selectedTab",
+				"selectedTabProducts"
+			],
+			[
+				"setTabsSelec",
+				"setTabsSelectedTabProjectsSetter"
+			],
+			[
+				"setTabsSele",
+				"setTabsSelectedTabSetter"
+			],
+			[
+				"TabsProject",
+				"TabsProjectsPublish"
+			],
+			[
+				"TabsProjects",
+				"TabsProjectsDocuments"
+			],
+			[
+				"TabsProjec",
+				"TabsProjectsMetadata"
+			],
+			[
+				"getSele",
+				"getSelectedTab"
+			],
+			[
+				"getSel",
+				"getSelectedTabProjectsSetter"
+			],
+			[
+				"getSelte",
+				"getSelectedTab"
+			],
+			[
+				"selecte",
+				"selectedTabSetter"
+			],
+			[
+				"selec",
+				"selectedTabSetter"
+			],
+			[
+				"selected",
+				"selectedTabSetter"
+			],
+			[
+				"selectedTabProduct",
+				"selectedTabProductsSetter"
+			],
+			[
+				"tabl",
+				"tabLevel2"
+			],
+			[
+				"tabLevel",
+				"tabLevel1"
+			],
+			[
+				"tab",
+				"tabLevel1"
+			],
+			[
+				"root",
+				"angular: $rootScope"
+			],
+			[
+				"pading",
+				"padding-top"
+			],
+			[
+				"fax",
+				"fax"
+			],
+			[
+				"published",
+				"published"
+			],
+			[
+				"issue",
+				"issueDate"
+			],
+			[
+				"author",
+				"author"
+			],
+			[
+				"phone",
+				"phone"
+			],
+			[
+				"al",
+				"text-align"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 7,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/kuscum/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+			"settings":
+			{
+				"buffer_size": 243,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 520.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/kuscum/Documents/Studium/DHBW Theoriesemester/4. Semester/Web Engineering/Projekt/files/implementation",
+		"/C/Users/kuscum/Documents/Studium/DHBW Theoriesemester/4. Semester/Web Engineering/Projekt/files/implementation/css",
+		"/C/Users/kuscum/Documents/Studium/DHBW Theoriesemester/4. Semester/Web Engineering/Projekt/files/implementation/js",
+		"/C/Users/kuscum/Documents/Studium/DHBW Theoriesemester/4. Semester/Web Engineering/Projekt/files/implementation/pics",
+		"/C/Users/kuscum/Documents/Studium/DHBW Theoriesemester/4. Semester/Web Engineering/Projekt/files/implementation/pics/logo"
+	],
+	"file_history":
+	[
+		"/C/Users/kuscum/Documents/Studium/DHBW Theoriesemester/4. Semester/Web Engineering/Projekt/files/implementation/css/style.css",
+		"/C/Users/kuscum/Documents/Studium/DHBW Theoriesemester/4. Semester/Web Engineering/Projekt/files/implementation/js/scripts.js",
+		"/C/Users/kuscum/Documents/Studium/DHBW Theoriesemester/4. Semester/Web Engineering/Projekt/files/implementation/index.html",
+		"/C/Users/kuscum/Documents/Studium/DHBW Theoriesemester/4. Semester/Compilerbau/compiler/implementation/pom.xml",
+		"/C/Users/kuscum/Documents/Studium/DHBW Theoriesemester/4. Semester/Compilerbau/compiler/implementation/src/main/java/com/dhbw/compiler/App.java",
+		"/C/Users/kuscum/Documents/Studium/DHBW Theoriesemester/4. Semester/Compilerbau/compiler/implementation/src/test/java/com/dhbw/compiler/AppTest.java",
+		"/C/Users/kuscum/Documents/Studium/DHBW Theoriesemester/4. Semester/Compilerbau/compiler/.gitignore",
+		"/C/Users/kuscum/Documents/Studium/DHBW Theoriesemester/4. Semester/Compilerbau/compiler/1. Iteration/hipsterLanguage",
+		"/C/Users/kuscum/Documents/Studium/DHBW Theoriesemester/4. Semester/Compilerbau/compiler/1. Iteration/SuperHeroes_",
+		"/C/Users/kuscum/Documents/Studium/DHBW Theoriesemester/4. Semester/Compilerbau/compiler/1. Iteration/codestructure.c",
+		"/C/Users/kuscum/Documents/Studium/DHBW Theoriesemester/4. Semester/Compilerbau/docs/compiler/1. Iteration/UserStories.html",
+		"/C/Users/kuscum/Documents/Studium/DHBW Theoriesemester/4. Semester/Compilerbau/docs/compiler/1. Iteration/hipsterLanguage",
+		"/C/Users/kuscum/Documents/Studium/DHBW Theoriesemester/4. Semester/Compilerbau/docs/compiler/html/UserStories.html",
+		"/C/Users/kuscum/AppData/Roaming/Sublime Text 3/Packages/User/HTML.sublime-settings",
+		"/C/Users/kuscum/Documents/Studium/DHBW Theoriesemester/4. Semester/Compilerbau/Workspace/Compiler/versuch2/compiler/pom.xml",
+		"/C/Users/kuscum/Desktop/pom.xml",
+		"/C/Users/kuscum/Documents/Studium/DHBW Theoriesemester/4. Semester/Compilerbau/Workspace/Compiler/my-app/pom.xml",
+		"/C/Users/kuscum/Desktop/jasmin-2.4/examples/HelloWorld.j",
+		"/C/Users/kuscum/Desktop/jasmin-2.4/examples/HelloWorld - Copy.j",
+		"/C/Users/kuscum/Desktop/jasmin-2.4/examples/wiki.j",
+		"/C/Users/kuscum/Desktop/jasmin-2.4/examples/HelloWeb.j",
+		"/C/Users/kuscum/Desktop/jasmin-2.4/examples/HelloWeb - Copy.j",
+		"/C/Users/kuscum/Desktop/jasmin-2.4/examples/Wikipedia.j",
+		"/C/xampp/htdocs/ghsts-builder/www/pages/projectsTab/projects-publish.html",
+		"/C/xampp/htdocs/ghsts-builder/www/pages/projectsTab/projects-documents.html",
+		"/C/xampp/htdocs/ghsts-builder/www/pages/projectsTab/projects-load.html",
+		"/C/xampp/htdocs/ghsts-builder/www/features/Routing/app-states.js",
+		"/C/xampp/htdocs/ghsts-builder/www/pages/tools.html",
+		"/C/xampp/htdocs/ghsts-builder/www/styles/app.css",
+		"/C/xampp/htdocs/ghsts-builder/www/pages/productsTab/products-products.html",
+		"/C/xampp/htdocs/ghsts-builder/www/db/document-schema.json",
+		"/C/xampp/htdocs/ghsts-builder/www/pages/projects.html",
+		"/C/xampp/htdocs/ghsts-builder/www/pages/file-management.html",
+		"/C/xampp/htdocs/ghsts-builder/www/features/DynamicList/dynamic-list-template.html",
+		"/C/xampp/htdocs/ghsts-builder/www/features/Routing/navbar.html",
+		"/C/xampp/htdocs/ghsts-builder/www/Missing Implementations detailed.xlsx",
+		"/C/Users/kuscum/Desktop/ghsts-builder/www/index.html",
+		"/C/Users/kuscum/Desktop/ghsts-builder/www/features/app.js",
+		"/C/Users/kuscum/Desktop/ghsts-builder/www/styles/app.css",
+		"/C/Users/kuscum/Desktop/test/package.json",
+		"/C/xampp/htdocs/ghsts-builder/web-page/db/legal-entity-schema.json",
+		"/C/xampp/htdocs/ghsts-builder/web-page/features/DynamicList/dynamic-list-template.html",
+		"/C/Users/kuscum/Desktop/Ionic/myApp/package.json",
+		"/C/xampp/htdocs/ghsts-builder/web-page/styles/app.css",
+		"/C/xampp/htdocs/ghsts-builder/web-page/pages/projects.html",
+		"/C/xampp/htdocs/ghsts-builder/web-page/pages/products.html",
+		"/C/xampp/htdocs/ghsts-builder/web-page/features/Routing/navbar.html",
+		"/C/xampp/htdocs/ghsts-builder/web-page/index.html",
+		"/C/xampp/htdocs/ghsts-builder/web-page/pages/projectsTab/projects-load.html",
+		"/C/xampp/htdocs/ghsts-builder/web-page/db/contact-person-schema.json",
+		"/C/xampp/htdocs/ghsts-builder/web-page/db/submission.json",
+		"/C/xampp/htdocs/ghsts-builder/web-page/db/submission-schema.json",
+		"/C/xampp/htdocs/ghsts-builder/web-page/db/document-schema.json",
+		"/C/xampp/htdocs/ghsts-builder/web-page/features/Breadcrumb/breadcrumb-template.html",
+		"/C/xampp/htdocs/ghsts-builder/web-page/styles/animation.css",
+		"/C/xampp/htdocs/ghsts-builder/web-page/features/Animation/animate.js",
+		"/C/xampp/htdocs/ghsts-builder/web-page/db/documents.json",
+		"/C/xampp/htdocs/ghsts-builder/web-page/features/Routing/app-states.js",
+		"/C/xampp/htdocs/ghsts-builder/web-page/features/app.js",
+		"/C/Users/kuscum/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/xampp/htdocs/ghsts-builder/web-page/pages/legal-entities.html",
+		"/C/xampp/htdocs/ghsts-builder/web-page/pages/projectsTab/projects-publish.html",
+		"/C/xampp/htdocs/ghsts-builder/web-page/pages/projectsTab/projects-documents.html",
+		"/C/xampp/htdocs/ghsts-builder/web-page/pages/file-management.html",
+		"/C/xampp/htdocs/ghsts-builder/web-page/pages/productsTab/products-substances.html",
+		"/C/xampp/htdocs/ghsts-builder/web-page/pages/productsTab/products-products.html",
+		"/C/xampp/htdocs/ghsts-builder/web-page/pages/navbar.html",
+		"/C/xampp/htdocs/ghsts-builder/web-page/features/Breadcrumb/breadcrumb.js",
+		"/C/xampp/htdocs/ghsts-builder/web-page/styles/lib/bootstrap-3.3.2-dist/css/bootstrap.css",
+		"/C/xampp/htdocs/ghsts-builder/web-page/features/TextComboBox/text-combo-box-style.css",
+		"/C/xampp/htdocs/ghsts-builder/web-page/test.html",
+		"/C/xampp/htdocs/ghsts-builder/web-page/features/TextComboBox/text-combo-box-template.html",
+		"/C/xampp/htdocs/ghsts-builder/web-page/features/MetadataGrid/metadata-grid-template.html",
+		"/C/xampp/htdocs/ghsts-builder/web-page/features/DynamicList/dynamic-list.js",
+		"/C/xampp/htdocs/ghsts-builder/web-page/features/TextComboBox/text-combo-box.js",
+		"/C/xampp/htdocs/ghsts-builder/web-page/features/MetadataGrid/metadata-grid.js",
+		"/C/xampp/htdocs/ghsts-builder/web-page/features/DragDrop/drag-drop.js",
+		"/C/xampp/htdocs/ghsts-builder/web-page/features/OpenPicklistWithInput/openPicklistWithInput.js",
+		"/C/xampp/htdocs/ghsts-builder/web-page/pages/icons.html",
+		"/C/xampp/htdocs/ghsts-builder/web-page/features/Picklist/picklists.js",
+		"/C/xampp/htdocs/ghsts-builder/web-page/styles/hp/hpstyle.css",
+		"/C/xampp/htdocs/ghsts-builder/web-page/package.json",
+		"/C/Users/kuscum/Desktop/angularTutorial/angular-phonecat/package.json",
+		"/C/xampp/htdocs/ghsts-builder/web-page/features/ListView/list-view.js",
+		"/C/xampp/htdocs/ghsts-builder/web-page/pages/help.html",
+		"/C/xampp/htdocs/ghsts-builder/web-page/features/Routing/tab-template.html",
+		"/C/xampp/htdocs/ghsts-builder/web-page/styles/lib/bootstrap.css",
+		"/C/xampp/htdocs/ghsts-builder/web-page/pages/productsTab/products-products-template.html",
+		"/C/xampp/htdocs/ghsts-builder/web-page/pages/projectsTab/projects-documents-template.html",
+		"/C/xampp/htdocs/ghsts-builder/web-page/pages/projectsTab/projects-load-template.html",
+		"/C/xampp/htdocs/ghsts-builder/web-page/pages/projectsTab/projects-metadata-template.html",
+		"/C/xampp/htdocs/ghsts-builder/web-page/pages/projectsTab/projects-publish-template.html",
+		"/C/xampp/htdocs/ghsts-builder/web-page/pages/productsTab/products-substances-template.html",
+		"/C/xampp/htdocs/ghsts-builder/web-page/pages/projects/projectsLoadTemplate",
+		"/C/Users/kuscum/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/xampp/htdocs/ghsts-builder/web-page/features/Routing/tabs.js",
+		"/C/xampp/htdocs/ghsts-builder/web-page/pages/fileManagement.html",
+		"/C/xampp/htdocs/ghsts-builder/web-page/features/Tabs/tabs.js",
+		"/C/xampp/htdocs/ghsts-builder/web-page/features/DragDrop/dragDropDirective.js",
+		"/C/Users/kuscum/AppData/Roaming/Sublime Text 3/Packages/Color Highlighter/ColorHighlighter.sublime-settings"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 98.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"int",
+			"<project xmlns=\"http://maven.apache.org/POM/4.0.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n  xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\">",
+			"load",
+			"!NV",
+			"fileManagement",
+			"animate.js",
+			"controller",
+			".nav",
+			"!NV",
+			"Head",
+			"<li ng-class=\"{'active':selectedTab === '/fileManagement'}\" id=\"tab\" ng-click=\"selectedTab = '/fileManagement'\"><a href=\"#/fileManagement\">File Management</a></li>",
+			"<li ng-class=\"{'active':selectedTab == '/fileManagement'}\" id=\"tab\" ng-click=\"selectedTab = '/fileManagement'\"><a href=\"#/fileManagement\">File Management</a></li>\n	        <li ng-class=\"{'active':selectedTab == '/legalEntities'}\" ng-click=\"selectedTab = '/legalEntities' \" id=\"tab\"><a href=\"#/legalEntities\">Legal Entities</a></li>",
+			"checkbox",
+			"documents",
+			"indicator",
+			"name",
+			".btn",
+			"</h2>",
+			"<h2>",
+			"console.log(\"",
+			"console.log",
+			"    $scope.selectedTab = tabsSetter.getSelectedTab();\n    $scope.selectedTabProducts = tabsSetter.getSelectedTabProductsSetter();\n    $scope.selectedTabProjects= tabsSetter.getSelectedTabProjectsSetter();",
+			"TabsLegalEntities",
+			"app",
+			".service",
+			"ProjectsLoadCtrl",
+			"TabsLocationCtrl",
+			"controller",
+			"	",
+			"load",
+			"legalEntityIdentifier",
+			"type",
+			"Entry",
+			"styles",
+			"MetadataGridDefinitionCtrl",
+			"dynamic",
+			" ",
+			"navbar-texte",
+			"active",
+			"logo"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "C:\\Users\\kuscum\\Documents\\Studium\\DHBW Theoriesemester\\4. Semester\\Web Engineering\\Projekt\\files\\implementation"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7,
+								7
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/kuscum/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 243,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								118,
+								118
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 32.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 242.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
