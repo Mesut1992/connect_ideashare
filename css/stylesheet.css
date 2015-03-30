@@ -1,11 +1,14 @@
 /*PAGE GRID*/
 .logo-slide {
-  background-color: #A64B00;
   width: 40%;
-  height: 160px;
+  height: 900px;
+}
+.logo{
+    height: 160px;
+    background-color: #F5D76E; /*#87D37C;*/
 }
 .navigation {
-  background-color: #1e1d23;
+  background-color: #302c2d;
   width: 60%;
   height: 480px;
 }
@@ -16,7 +19,54 @@
 .left-side1{
   height: 640px;
   width: 320px;
-  border: 2px solid blue;
+  border: 2px dashed black;
+  float: right;
+}
+.preview-under-nav-links{
+  border: 2px dashed white;
+  height: 320px;
+  width: 640px;
+}
+.right-side1{
+  height: 320px;
+  width: 320px;
+  border: 2px dashed black;
+  background-color: #f0f0f0; /*delete this - only for demonstrational purposes */
+}
+.right-side2{
+  height: 640px;
+  width: 320px;
+  border: 2px dashed black;
+}
+.left-side2{
+  height: 320px;
+  width: 57%;
+  border: 2px dashed black;
+  margin-top:-320px;
+}
+.left-side2-content{
+  float: right;
+  height: 320px;
+  width: 640px;
+  border: 2px dashed black;
+  background-color: #f0f0f0;
+}
+.left-side3{
+  height: 640px;
+  width: 40%;
+  border: 2px dashed black;
+}
+.left-side3-content{
+  height: 640px;
+  width: 320px;
+  border: 2px dashed black;
+  float: right;
+}
+.left-side4{
+  height: 960px;
+  width: 640px;
+  border: 2px dashed black;
+  background-color: #F5D76E; /*#87D37C;*/
 }
 
 /*PAGE CONTENT STYLE*/
@@ -39,7 +89,7 @@ a{
 p{
   color: white;
 }
-.logo-slide > img{
+.logo > img{
   max-width: 100%;
   max-height: 100%;
   float: right;
@@ -61,27 +111,6 @@ p{
  margin: 0 auto;
  max-width: 960px;
  padding: 0 0px 0;
-}
-
-.logo-side {
-background-color: #2c3e50;
-width: 45%;
-height: 160px;
-
-/* height: 480px;
- width: 50%;
- left: 0;
- top: 0;
- margin-left: -160px;
- z-index: 4;
- overflow: hidden;
- position: absolute;
- background: #50A6C2;*/
-}
-.test {
- height: 600px;
- width: 30%;
- padding: 300px;
 }
 .link-side {
  height: 160px;
