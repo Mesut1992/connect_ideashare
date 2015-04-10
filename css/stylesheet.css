@@ -1,11 +1,11 @@
 /*PAGE GRID*/
 .logo-slide {
   width: 40%;
-  height: 900px;
+  height: 2400px;
 }
 .logo{
     height: 160px;
-    background-color: #F5D76E; /*#87D37C;*/
+    background-color: #1abc9c; /* #87D37C #c0392b #c0392b #F5D76E */
 }
 .navigation {
   background-color: #302c2d;
@@ -17,78 +17,118 @@
   position: relative; /* to align the links in the center of the block! See navigation-links-table*/
 }
 .left-side1{
-  height: 640px;
+  background-color: white;
+  height: 640px; /*3000px;*/
   width: 320px;
-  border: 2px dashed black;
   float: right;
 }
 .preview-under-nav-links{
-  border: 2px dashed white;
   height: 320px;
   width: 640px;
 }
 .right-side1{
   height: 320px;
   width: 320px;
-  border: 2px dashed black;
   background-color: #f0f0f0; /*delete this - only for demonstrational purposes */
 }
 .right-side2{
+  background-color: #302c2d;
   height: 640px;
   width: 320px;
-  border: 2px dashed black;
 }
 .left-side2{
   height: 320px;
-  width: 57%;
-  border: 2px dashed black;
+  width: 59.55em;
   margin-top:-320px;
 }
 .left-side2-content{
+  background-color:#9b59b6; /* #1BA39C; */
   float: right;
   height: 320px;
   width: 640px;
-  border: 2px dashed black;
-  background-color: #f0f0f0;
 }
 .left-side3{
   height: 640px;
   width: 40%;
-  border: 2px dashed black;
 }
 .left-side3-content{
   height: 640px;
   width: 320px;
-  border: 2px dashed black;
+  background-color: white;
   float: right;
 }
 .left-side4{
-  height: 960px;
+  height: 640px;
   width: 640px;
-  border: 2px dashed black;
-  background-color: #F5D76E; /*#87D37C;*/
+  background-color: #1abc9c; /*#87D37C;*/
 }
-
+.left-side4-content{
+  background-color: #7f8c8d;
+  float: right;
+  height: 320px;
+  width: 640px;
+}
 /*PAGE CONTENT STYLE*/
+*{
+  font-family: 'Dosis', sans-serif;
+  padding: 0;
+  margin: 0;  
+  box-sizing: border-box;
+  font-stretch: condensed;
+}
+#fixed-header-bar{
+  position: absolute;
+  z-index: 50;
+  right: 950px;
+}
+#fixed-settings-bar{
+  position: fixed;
+  left: 312.5px;
+}
+#fixed-content{
+  margin-top: 190px;
+}
+h2{
+  text-decoration: underline;
+}
 .body{
+  font-family: 'Dosis', sans-serif;
   background-color: #f0f0f0;
-
+  margin: 0;
+  padding: 0;
+}
+table.navigation-links-table-rightside {
+  position: relative;
+  top: 43px;
+  left: 540px;
 }
 .navigation-links-table {
-  position: absolute;
-  top: 50%;
-  left: 33%;
-  transform: translate(-50%, -50%);
-  width: 50%;
+  position: relative;
+  top: 67px;
+  left: 60px;
+}
+.active > a{
+  color: #1abc9c; 
+}
+.right-side-large-block{
+  width: 640px;
+  height: 1280px;
+  background-color: blue;
+}
+p{
+  font-size:18px;
 }
 a{
   color: white;
   text-decoration: none;
   font-weight: bold;
+  line-height: 0.9em;
 }
-p{
-  color: white;
+h4{
+  font-weight: bold;
+  font-size: 22px;
 }
+
 .logo > img{
   max-width: 100%;
   max-height: 100%;
@@ -97,7 +137,24 @@ p{
 .logo-slide > h4{
   float:right;
 }
+.fa-minus{
+  color: #1abc9c;
+}
+.block-content{
+  margin: 3em;
+  max-width: 100%;
+  max-height: 100%;
+}
+.colored-header{
+  font-size: 2.8em;
+  color: #1abc9c;
+}
+.right-side1 h4 {
+  line-height: 0.9em;
+}
+#copyright{
 
+}
 
 #container {
  min-width: 960px;
