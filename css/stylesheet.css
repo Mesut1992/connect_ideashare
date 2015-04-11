@@ -58,7 +58,7 @@
   float: right;
 }
 .left-side4{
-  height: 640px;
+  height: 960px;
   width: 640px;
   background-color: #1abc9c; /*#87D37C;*/
 }
@@ -80,19 +80,29 @@
   height: 2400px;
 }
 #fixed-header-bar{
-  position: absolute;
-  z-index: 50;
+  
+  z-index: -10;
   right: 950px;
 }
 #fixed-settings-bar{
   position: fixed;
+  z-index: 0;
   left: 312.5px;
+  height: 940px;
+  /*top: 160px;*/
 }
-#fixed-content{
-  margin-top: 190px;
+#empty-box-190px{
+  height: 160px;
+  background: transparent;
+}
+#fixed-left-side4{
+  height: 640px;
 }
 h2{
   text-decoration: underline;
+}
+select{
+  width: 100%;
 }
 .body{
   font-family: 'Dosis', sans-serif;
@@ -116,7 +126,7 @@ table.navigation-links-table-rightside {
 .right-side-large-block{
   width: 640px;
   height: 1280px;
-  background-color: blue;
+  background-color: #7f8c8d;
 }
 p{
   font-size:18px;
@@ -126,6 +136,15 @@ a{
   text-decoration: none;
   font-weight: bold;
   line-height: 0.9em;
+}
+.text-metadata-grid{
+  font-weight: bold;
+}
+a .active{
+  color: #1ABC9D;
+}
+.block-content a{
+  color: black;
 }
 h4{
   font-weight: bold;
