@@ -31,14 +31,18 @@
   width: 320px;
   background-color: #f0f0f0; /*delete this - only for demonstrational purposes */
 }
+td{
+  padding-bottom: 0.8em;
+}
 .right-side2{
   background-color: #302c2d;
   height: 640px;
   width: 320px;
 }
 .left-side2{
+  margin-left: 320px;
   height: 320px;
-  width: 59.55em;
+  width: 40%;
   margin-top:-320px;
 }
 .left-side2-content{
@@ -76,6 +80,13 @@
   box-sizing: border-box;
   font-stretch: condensed;
 }
+.float-right-container{
+  /*For fixed elements to align them on the right side*/
+  float: right;
+  height: 940px;
+  width: 320px;
+  background: transparent;
+}
 #fixed-logo-slide{
   height: 2400px;
 }
@@ -87,7 +98,7 @@
 #fixed-settings-bar{
   position: fixed;
   z-index: 0;
-  left: 312.5px;
+  /*left: 312.5px;*/
   height: 940px;
   /*top: 160px;*/
 }
@@ -100,6 +111,9 @@
 }
 h2{
   text-decoration: underline;
+}
+input{
+  width: 100%;
 }
 select{
   width: 100%;
@@ -150,7 +164,9 @@ h4{
   font-weight: bold;
   font-size: 22px;
 }
-
+.white-color{
+  color:white;
+}
 .logo > img{
   max-width: 100%;
   max-height: 100%;
@@ -163,7 +179,7 @@ h4{
   color: #1abc9c;
 }
 .block-content{
-  margin: 3em;
+  margin: 2em;
   max-width: 100%;
   max-height: 100%;
 }
@@ -174,10 +190,15 @@ h4{
 .right-side1 h4 {
   line-height: 0.9em;
 }
-#copyright{
-
+.grey-background{
+  background: #7f8c8d;
 }
-
+.background-transparent{
+  background: transparent;
+}
+#explenationbox-discoverpage{
+  background-color: #7f8c8d;
+}
 #container {
  min-width: 960px;
  position: relative;
