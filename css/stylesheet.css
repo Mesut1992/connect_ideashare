@@ -1,0 +1,259 @@
+/*PAGE GRID*/
+.logo-slide {
+  width: 40%;
+  height: 640px;
+}
+.logo{
+    height: 160px;
+    background-color: #1abc9c; /* #87D37C #c0392b #c0392b #F5D76E */
+}
+.main-color{
+    color: #1abc9c;
+}
+.navigation {
+  background-color: #302c2d;
+  width: 60%;
+  height: 480px;
+}
+.navigation-links{
+  height: 160px;
+  position: relative; /* to align the links in the center of the block! See navigation-links-table*/
+}
+.left-side1{
+  background-color: white;
+  height: 640px; /*3000px;*/
+  width: 320px;
+  float: right;
+}
+.preview-under-nav-links{
+  height: 320px;
+  width: 640px;
+}
+.right-side1{
+  height: 320px;
+  width: 320px;
+  background-color: #f0f0f0; /*delete this - only for demonstrational purposes */
+}
+td{
+  padding-bottom: 0.8em;
+}
+.right-side2{
+  background-color: #302c2d;
+  height: 640px;
+  width: 320px;
+}
+.left-side2{
+  margin-left: 320px;
+  height: 320px;
+  width: 40%;
+  margin-top:-320px;
+}
+.left-side2-content{
+  background-color:#9b59b6; /* #1BA39C; */
+  float: right;
+  height: 320px;
+  width: 640px;
+}
+.left-side3{
+  height: 640px;
+  width: 40%;
+}
+.left-side3-content{
+  height: 640px;
+  width: 320px;
+  background-color: #7f8c8d;
+  float: right;
+}
+.left-side4{
+  height: 960px;
+  width: 640px;
+  background-color: #1abc9c; /*#87D37C;*/
+}
+.left-side4-content{
+  background-color: white;
+  float: right;
+  height: 320px;
+  width: 640px;
+}
+/*PAGE CONTENT STYLE*/
+*{
+  font-family: 'Dosis', sans-serif;
+  padding: 0;
+  margin: 0;  
+  box-sizing: border-box;
+  font-stretch: condensed;
+}
+.float-right-container{
+  /*For fixed elements to align them on the right side*/
+  float: right;
+  height: auto;
+  min-height: 2400px;
+  width: 320px;
+  background: white;
+}
+#fixed-logo-slide{
+  /*height: 2400px;*/
+}
+#fixed-header-bar{
+  
+  z-index: -10;
+  right: 950px;
+}
+#fixed-settings-bar{
+  position: fixed;
+  z-index: 0;
+  /*left: 312.5px;*/
+  height: 940px;
+  /*top: 160px;*/
+}
+#empty-box-190px{
+  height: 160px;
+  background: transparent;
+}
+#fixed-left-side4{
+  height: 640px;
+}
+h2{
+  text-decoration: underline;
+}
+input{
+  width: 100%;
+}
+select{
+  width: 100%;
+}
+textarea{
+  width: 100%;
+  height: 50px;
+}
+form > table {
+  width: 100%;
+}
+.block-content > table{
+  width: 100%;
+}
+.block-content > td{
+  padding-right: 2.5em;
+}
+.body{
+  font-family: 'Dosis', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+table.navigation-links-table-rightside {
+  position: relative;
+  top: 43px;
+  left: 540px;
+}
+.navigation-links-table {
+  position: relative;
+  top: 67px;
+  left: 60px;
+}
+.active > a{
+  color: #1abc9c; 
+}
+.right-side-large-block{
+  width: 640px;
+  height: auto;
+  min-height: 1280px;
+  background-color: #7f8c8d;
+}
+p{
+  font-size:18px;
+}
+a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 0.9em;
+}
+.text-metadata-grid{
+  font-weight: bold;
+}
+a .active{
+  color: #1ABC9D;
+}
+.block-content a{
+  color: black;
+}
+h4{
+  font-weight: bold;
+  font-size: 22px;
+}
+.white-color{
+  color:white;
+}
+.logo > img{
+  max-width: 100%;
+  max-height: 100%;
+  float: right;
+}
+.logo-slide > h4{
+  float:right;
+}
+.fa-minus{
+  color: #1abc9c;
+}
+.block-content{
+  margin: 2em;
+  max-width: 100%;
+  max-height: 100%;
+}
+.colored-header{
+  font-size: 2.8em;
+  color: #1abc9c;
+}
+.right-side1 h4 {
+  line-height: 0.9em;
+}
+.grey-background{
+  background: #7f8c8d;
+}
+.background-transparent{
+  background: transparent;
+}
+#explenationbox-discoverpage{
+  background-color: #7f8c8d;
+}
+#container {
+ min-width: 960px;
+ position: relative;
+ margin: 0 auto;
+ overflow: hidden;
+ min-height: 100%;
+ background: #f0f0f0;
+}
+.navigation-bar {
+ margin: 0 auto;
+ max-width: 960px;
+ padding: 0 0px 0;
+}
+.link-side {
+ height: 160px;
+ background: #323232;
+ width: 150%;
+ left: 0;
+ top: 0;
+ margin-left: -160px;
+ z-index: 3;
+ overflow: hidden;
+ position: absolute;
+}
+.links {
+/*	height: 160px;
+	text-align: center;
+
+	
+	color: #FFFFFF;
+	z-index:5;
+	border: double;*/
+ margin-left: 700px;
+  display: inline-block;
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: 20px;
+  padding: 23px 3px 0;
+}
