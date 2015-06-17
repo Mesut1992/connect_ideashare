@@ -7,6 +7,9 @@
     height: 160px;
     background-color: #1abc9c; /* #87D37C #c0392b #c0392b #F5D76E */
 }
+.main-color{
+    color: #1abc9c;
+}
 .navigation {
   background-color: #302c2d;
   width: 60%;
@@ -58,7 +61,7 @@ td{
 .left-side3-content{
   height: 640px;
   width: 320px;
-  background-color: white;
+  background-color: #7f8c8d;
   float: right;
 }
 .left-side4{
@@ -67,7 +70,7 @@ td{
   background-color: #1abc9c; /*#87D37C;*/
 }
 .left-side4-content{
-  background-color: #7f8c8d;
+  background-color: white;
   float: right;
   height: 320px;
   width: 640px;
@@ -83,12 +86,13 @@ td{
 .float-right-container{
   /*For fixed elements to align them on the right side*/
   float: right;
-  height: 940px;
+  height: auto;
+  min-height: 2400px;
   width: 320px;
-  background: transparent;
+  background: white;
 }
 #fixed-logo-slide{
-  height: 2400px;
+  /*height: 2400px;*/
 }
 #fixed-header-bar{
   
@@ -118,6 +122,19 @@ input{
 select{
   width: 100%;
 }
+textarea{
+  width: 100%;
+  height: 50px;
+}
+form > table {
+  width: 100%;
+}
+.block-content > table{
+  width: 100%;
+}
+.block-content > td{
+  padding-right: 2.5em;
+}
 .body{
   font-family: 'Dosis', sans-serif;
   background-color: #f0f0f0;
@@ -139,7 +156,8 @@ table.navigation-links-table-rightside {
 }
 .right-side-large-block{
   width: 640px;
-  height: 1280px;
+  height: auto;
+  min-height: 1280px;
   background-color: #7f8c8d;
 }
 p{
