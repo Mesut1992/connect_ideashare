@@ -264,3 +264,33 @@ div#container{
   width: 320px;
   height: 320px;
 }
+.move-down {
+	margin-top: 1em;
+}
+
+.move-down input[type=text], .move-down input[type=email], .move-down input[type=url], .move-down input[type=submit] {
+	padding: 4px 4px 4px 4px;
+}
+
+.move-down input[type=submit] {
+	width: auto;
+	float: right;
+}
+
+.profile-picture {
+	width: 100%;
+}
+
+.msg-success {
+	background-color: #1ABC9C;
+	
+	height: 2em;
+	
+	padding-top: 5px;
+}
+
+.msg-success p {
+	font-weight: bold;
+	
+	margin-left: 1em;
+}
