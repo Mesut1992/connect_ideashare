@@ -257,3 +257,21 @@ h4{
   line-height: 20px;
   padding: 23px 3px 0;
 }
+
+.move-down {
+	margin-top: 1em;
+}
+
+.move-down input[type=text], .move-down input[type=email], .move-down input[type=url] {
+	padding: 4px 4px 4px 4px;
+}
+
+.move-down input[type=submit] {
+	padding: 4px 4px 4px 4px;
+	width: auto;
+	float: right;
+}
+
+.profile-picture {
+	width: 100%;
+}
