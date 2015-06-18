@@ -62,7 +62,7 @@ include_once "includes/login_check.php";
 						    <td><a href="about-us.php">&nbspABOUT US&nbsp</a></td>
 						    <td><i class="fa fa-minus fa-1g"></i></td>
 						   
-						    <td><a href="login.php">&nbspPROFILE <i class="fa fa-caret-down">&nbsp</i></a></td>
+						    <td><a href="profile.php">&nbspPROFILE <i class="fa fa-caret-down">&nbsp</i></a></td>
 						    <td><i class="fa fa-minus fa-1g"></i></td>
 						    
 						    <td><a href="logout.php">&nbspLOG OUT</a></td>						   				  

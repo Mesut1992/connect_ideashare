@@ -37,7 +37,7 @@ include_once '/includes/profile.inc.php';
 		 		<div class="float-right-container">
 			 		<div id="" class="left-side1 block">
 			 			<div class="block-content">	
-			 				<h3>Hi NAME! :)</h3>
+			 				<h3>Hi <?php echo $sessuser ?>! :)</h3>
 			 				<hr/>
 			 				<img src="pics/example/photo-original.jpg" alt="Profile Picture" class="profile-picture move-down"/>
 						</div>
@@ -69,15 +69,31 @@ include_once '/includes/profile.inc.php';
 		 			</div>
 		 			<div class="left-side4 block grey-background" id="">
 		 				<div class="block-content white-color">
-		 					<h3>You can change your data right here</h3>
+		 					<?php 
+		 					
+		 						if($updated)
+		 							echo '
+								<div class="msg-success">
+			 						<p>You successfully updated your profile information!</p>
+			 					</div>
+									';
+		 						else 
+		 							echo '
+								<h3>You can change your data right here</h3>
+									';
+		 					
+		 					?>
+		 					
+		 					<?php echo ($disabled ? "" : '
 		 					<form action="profile.php" method="get">
+		 					') ?>
 		 						<table class="move-down">
 		 							<tr>
 			 							<td>
 		 									<label for="firstname">First Name:</label>
 			 							</td>
 			 							<td>
-				 							<input type="text" name="firstname" value="<?php echo $fname ?>"></input>
+				 							<input type="text" name="firstname" value="<?php echo $fname ?>" <?php echo ($disabled ? "disabled" : "") ?>></input>
 				 						</td>
 		 							</tr>
 		 							<tr>
@@ -85,7 +101,7 @@ include_once '/includes/profile.inc.php';
 		 									<label for="lastname">Last Name:</label>
 			 							</td>
 			 							<td>
-				 							<input type="text" name="lastname" value="<?php echo $lname ?>"></input>
+				 							<input type="text" name="lastname" value="<?php echo $lname ?>" <?php echo ($disabled ? "disabled" : "") ?>></input>
 				 						</td>
 		 							</tr>
 		 							<tr>
@@ -93,7 +109,7 @@ include_once '/includes/profile.inc.php';
 		 									<label for="email">E-Mail:</label>
 			 							</td>
 			 							<td>
-				 							<input type="email" name="email" value="<?php echo $email ?>"></input>
+				 							<input type="email" name="email" value="<?php echo $email ?>" <?php echo ($disabled ? "disabled" : "") ?>></input>
 				 						</td>
 		 							</tr>
 		 							<tr>
@@ -101,7 +117,7 @@ include_once '/includes/profile.inc.php';
 		 									<label for="faculty">Faculty:</label>
 			 							</td>
 			 							<td>
-				 							<input type="text" name="faculty" value="<?php echo $fac ?>"></input>
+				 							<input type="text" name="faculty" value="<?php echo $fac ?>" <?php echo ($disabled ? "disabled" : "") ?>></input>
 				 						</td>
 		 							</tr>
 		 							<tr>
@@ -109,7 +125,7 @@ include_once '/includes/profile.inc.php';
 		 									<label for="location">Location:</label>
 			 							</td>
 			 							<td>
-				 							<input type="text" name="location" value="<?php echo $loc ?>"></input>
+				 							<input type="text" name="location" value="<?php echo $loc ?>" <?php echo ($disabled ? "disabled" : "") ?>></input>
 				 						</td>
 		 							</tr>
 		 							<tr>
@@ -121,7 +137,7 @@ include_once '/includes/profile.inc.php';
 		 									<label for="webpage">Webpage:</label>
 			 							</td>
 			 							<td>
-				 							<input type="url" name="webpage" value="<?php echo $webp ?>"></input>
+				 							<input type="url" name="webpage" value="<?php echo $webp ?>" <?php echo ($disabled ? "disabled" : "") ?>></input>
 				 						</td>
 		 							</tr>
 		 							<tr>
@@ -129,7 +145,7 @@ include_once '/includes/profile.inc.php';
 		 									<label for="linkedin">LinkedIn-Profile:</label>
 			 							</td>
 			 							<td>
-				 							<input type="url" name="linkedin" value="<?php echo $lin ?>"></input>
+				 							<input type="url" name="linkedin" value="<?php echo $lin ?>" <?php echo ($disabled ? "disabled" : "") ?>></input>
 				 						</td>
 		 							</tr>
 		 							<tr>
@@ -137,7 +153,7 @@ include_once '/includes/profile.inc.php';
 		 									<label for="facebook">Facebook-Profile:</label>
 			 							</td>
 			 							<td>
-				 							<input type="url" name="facebook" value="<?php echo $fb ?>"></input>
+				 							<input type="url" name="facebook" value="<?php echo $fb ?>" <?php echo ($disabled ? "disabled" : "") ?>></input>
 				 						</td>
 		 							</tr>
 		 							<tr>
@@ -145,7 +161,7 @@ include_once '/includes/profile.inc.php';
 		 									<label for="twitter">Twitter-Profile:</label>
 			 							</td>
 			 							<td>
-				 							<input type="url" name="twitter" value="<?php echo $twit ?>"></input>
+				 							<input type="url" name="twitter" value="<?php echo $twit ?>" <?php echo ($disabled ? "disabled" : "") ?>></input>
 				 						</td>
 		 							</tr>
 		 							<tr>
@@ -156,11 +172,18 @@ include_once '/includes/profile.inc.php';
 		 								<td>
 		 								</td>
 			 							<td>
-			 								<input type="submit" value="Change my Data!"></input> 
+			 								 <?php
+			 								 	echo ($disabled ? '' : '
+			 								 	<input type="submit" value="Change my Profile Information!"></input>		
+			 								 			'); 
+			 								 
+			 								 ?> 
 			 							</td>
 		 							</tr>
 		 						</table>
+		 					<?php echo ($disabled ? "" : '
 		 					</form>
+		 					') ?>
 		 				</div>
 		 			</div>
 		 		</div>

@@ -2,7 +2,17 @@
 include_once 'db_connect.php';
 include_once 'psl-config.php';
 
-$uid = $_SESSION["user_id"];
+$disabled = false;
+
+if(isset($_GET["user"])) {
+	$uid = $_GET["user"];
+	
+	$disabled = true;
+}
+else {
+	$uid = $_SESSION["user_id"];
+}
+
 $prep_stmt = "SELECT id, email, surname,
     		lastname, faculty, linkin, location, webpage, facebook, twitter
     		FROM members WHERE id = ?;";
@@ -13,6 +23,8 @@ $stmt->bind_param('i', $uid);
 
 $stmt->execute();
 $stmt->bind_result($uid, $iemail, $ifname, $ilname, $ifac, $ilin, $iloc, $iwebp, $ifb, $itwit);
+
+$updated = false;
 
 if($stmt->fetch()) {
 	$fname = $ifname;
@@ -27,9 +39,9 @@ if($stmt->fetch()) {
 	
 	$stmt->free_result();
 	
-	if(isset($_GET["firstname"]) || isset($_GET["lastname"]) || isset($_GET["email"])
+	if((isset($_GET["firstname"]) || isset($_GET["lastname"]) || isset($_GET["email"])
 		|| isset($_GET["faculty"]) || isset($_GET["location"]) || isset($_GET["webpage"]) 
-		|| isset($_GET["linkedin"]) || isset($_GET["facebook"]) || isset($_GET["twitter"])) {
+		|| isset($_GET["linkedin"]) || isset($_GET["facebook"]) || isset($_GET["twitter"])) && !$disabled) {
 		
 		if(isset($_GET["firstname"]))
 			$fname = $_GET["firstname"];
@@ -70,17 +82,9 @@ if($stmt->fetch()) {
 
 		$upd_stmt->bind_param('sssssssssi', $fname, $lname, $email, $fac, $loc, $webp, $lin, $fb, $twit, $uid);
 		
-		/*$upd_stmt->bind_param('s', $fname);
-		$upd_stmt->bind_param('s', $lname);
-		$upd_stmt->bind_param('s', $email);
-		$upd_stmt->bind_param('s', $fac);
-		$upd_stmt->bind_param('s', $loc);
-		$upd_stmt->bind_param('s', $webp);
-		$upd_stmt->bind_param('s', $lin);
-		$upd_stmt->bind_param('s', $fb);
-		$upd_stmt->bind_param('s', $twit);
+		$updated = true;
 		
-		$upd_stmt->bind_param('i', $uid);*/
+		$_SESSION["username"] = $fname;
 		
 		$upd_stmt->execute();
 	}
@@ -88,5 +92,7 @@ if($stmt->fetch()) {
 else {
 	echo "Something went terribly wrong... :S";
 }
+
+$sessuser = $_SESSION["username"];
 
 ?>
