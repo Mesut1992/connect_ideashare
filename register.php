@@ -194,119 +194,18 @@ include_once 'includes/functions.php';
 			 	</form>
 		 	<!--2nd row-->
 	 		<div class="right-side-large-block block">
-	 			<div class="320x640-transparent block">
-		 				<div class="block-content">
-			 				<!-- <h2>Contact Details</h2><br> -->
-			 				<!--<form action="<?php echo esc_url($_SERVER['PHP_SELF']); ?>"
-			 				method="post" name="registration_form">
-			 					<input type="text" name="surname" id="surname" maxlength="8" required placeholder="Enter a valid surname"/>
-			 					<input type="text" name="lastname" id="lastname" maxlength="8" required placeholder="Enter a valid lastname"/>
-			 					<input type="text" name="faculty" id="faculty" maxlength="8" required placeholder="Enter your faculty"/>
-			 					<input type="text" name="LinkIn" id="linkIn" maxlength="8" required placeholder="Enter your linkIn URL"/>
-			 					<input type="text" name="location" id="location" maxlength="8" required placeholder="Enter your City"/>
-			 					<input type="text" name="facebook" id="facebook" maxlength="8" required placeholder="Enter a Facebook URL"/>
-			 					<input type="text" name="webpage" id="webpage" maxlength="8" required placeholder="Enter a webpage URL"/>
-			 					<input type="text" name="username" id="username" maxlength="8" required placeholder="Enter a valid username"/>
-				 				<input title="valid mail"  type="email" name="email" id="email" maxlength="30" autocomplete="on" required placeholder="Enter a valid email address" pattern="[a-zA-Z]+[@][a-zA-Z]+[.][a-zA-Z]+"/>
-				 				<input type="password" name="password" id="password" placeholder="password"></input>
-				 				<input type="password" name="confirmpwd" id="confirmpwd" placeholder="confirm password"></input>
-				 				<input type="submit" value="Register" onclick="return regformhash(this.form, 
-				 						this.form.username, this.form.email, this.form.password, this.form.confirmpwd);"></input>
-				 			</form>-->
-		 				<!-- </div>		 -->
-		 		</div>
-		 		<!-- <div class="right-side1 square block">
-		 				<div class="block-content">
-			 				<form action="<?php echo esc_url($_SERVER['PHP_SELF']); ?>"
-			 				method="post" name="registration_form">
-			 					<table>
-			 						<tr>
-			 							<td>
-			 								Username
-			 							</td>
-			 							<td>
-			 								<input type="text" name="username" id="username" maxlength="8" required placeholder="Enter a valid username" pattern="https?://.+"/>
-			 							</td>
-			 						</tr>
-			 						<tr>
-			 							<td>
-			 								E-Mail
-			 							</td>
-			 							<td>
-			 								<input title="valid mail"  type="email" name="email" id="email" maxlength="30" autocomplete="on" required placeholder="Enter a valid email address" pattern="[a-zA-Z]+[@][a-zA-Z]+[.][a-zA-Z]+"/>
-			 							</td>			 							
-			 						</tr>
-					 				<tr>
-				 			 			<td>
-				 			 				Password
-				 			 			</td>
-				 			 			<td>
-				 			 				<input type="password" name="password" id="password"></input>
-				 			 			</td>
-				 			 		</tr>
-				 			 		<tr>
-				 			 			<td>
-				 			 				Confirm password
-				 			 			</td>
-				 			 			<td>
-				 			 				<input type="password" name="confirmpwd" id="confirmpwd"></input>
-				 			 			</td>
-				 			 		</tr>
-			 					</table>
-			 					<input type="button" value="Register" onclick="return regformhash(this.form, 
-			 						this.form.username, this.form.email, this.form.password, this.form.confirmpwd);"></input>
-			 				</form>
-		 				</div>
-		 		</div> -->
+	 		
+		 		
 	 			<div class="left-side4-content block">
-	 				<!-- <div class="right-side1 square block" style="background: transparent;">
-		 			 <div class="block-content white-color"> -->
-		 			 	<!-- <h2>Login details</h2>
-		 			 	<p>You will receive a mail with a link to verify your address!</p>
-		 			 	<br>
-		 			 	<table>
-		 			 		<tr>
-		 			 			<td>
-		 			 				Password
-		 			 			</td>
-		 			 			<td>
-		 			 				<input></input>
-		 			 			</td>
-		 			 		</tr>
-		 			 		<tr>
-		 			 			<td>
-		 			 				Retype
-		 			 			</td>
-		 			 			<td>
-		 			 				<input></input>
-		 			 			</td>
-		 			 		</tr>
-		 			 	</table>
-		 			 	<button><h4>Sign me up!</h4></button>
-		 			 	 -->
-		 			  <!-- </div>
-		 			 </div> -->
 		 			 <div class="right-side1 square block" style="background: transparent;">
-		 			 	<div class="block-content white-color">
+		 			 	<div class="block-content">
 		 			 	<h2>Social Media</h2>
 		 			 		<p>Please make sure you connect your profile to Facebook! You will be able to share your idea over Facebook!</p><br>
 		 			 		<p><strong>You can connect to your facebook profile by signing up and managing the profile settings page!</strong></p>
 		 			 	</div>
 		 			 </div>
 	 			</div>
-	 			<!-- <div class="left-side4-content block" style="border-style: dotted solid; background-color: transparent;">
-		 			 <div class="block-content">
-		 			 	<h4>Social media is a key part of CONNECT!</h4>
-		 			 	
-		 			 </div>
-	 			</div>
-	 			<div class="left-side4-content block" style="border-style: dotted solid; background-color: transparent;">
-	 				<h2> COMMENT SECTION </h2>
-	 			</div>
-	 			<div class="left-side4-content block" style="border-style: dotted solid; background-color: transparent;">
-					<h2> COMMENT SECTION </h2>
-	 			</div> -->
-	 		</div>
+	 		
 	 		<!--3rd row-->
 	 		<div class="block-group">
   			<div id="fixed-left-side4" class="left-side4 block">

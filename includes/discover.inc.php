@@ -3,24 +3,25 @@ include_once 'db_connect.php';
 include_once 'psl-config.php';
 
 if(isset($_GET["category"]) && isset($_GET["sort"]) && ($_GET["category"] != "All")) {
-    $prep_stmt = "SELECT title, abstract, description, category, 
+    $prep_stmt = "SELECT ideas_id, title, abstract, description, category, 
     user_id, username, email FROM ideas, members
     WHERE members.id = ideas.user_id AND category = ?;";
     $stmt = $mysqli->prepare($prep_stmt);
     $stmt->bind_param('s', $_GET["category"]);
 }
 else {
-    $prep_stmt = "SELECT title, abstract, description, category, 
+    $prep_stmt = "SELECT ideas_id, title, abstract, description, category, 
     user_id, username, email FROM ideas, members
     WHERE members.id = ideas.user_id;";
     $stmt = $mysqli->prepare($prep_stmt);
 }
 
 $stmt->execute();
-$stmt->bind_result($ttitle, $tabstract, $tdescription, $tcategory, 
+$stmt->bind_result($tideas_id ,$ttitle, $tabstract, $tdescription, $tcategory, 
     $tuid, $tuname, $temail);
 //$result = $mysqli->query($stmt);
 
+$ideas_id = array();
 $user_id = array();
 $username = array();
 $email = array();
@@ -33,6 +34,7 @@ $picture = array(); //is not implemented in the database yet
 $count = 0;
 
 while($stmt->fetch()) {
+    array_push($ideas_id, $tideas_id);
     array_push($user_id, $tuid);
     array_push($username, $tuname);
     array_push($email, $temail);

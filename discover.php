@@ -81,7 +81,7 @@ include_once '/includes/discover.inc.php';
 							        		<option value="None" selected="selected">None</option>
 							                <option value="Popularity">Popularity</option>
 							                <option value="Newest">Newest</option>
-							                <option value="Concluded">Concluded</option>
+							                <option value="Oldest">Oldest</option>
 								        </select>
 									</td> 
 								  </tr>
@@ -141,8 +141,9 @@ include_once '/includes/discover.inc.php';
 		 					<br>
 			 				<p>On the left side you can filter the ideas you want to see.<br>
 			 				Then scroll down to see your result. Don't worry, the filter bar will scroll down with you, if you need to make any changes!<br> Please notice that your result may end in several pages. You can view these also in the options bar on the left! <br>
-
 			 				</p>
+			 				<br><br>
+			 				<h2>Click on the picture to see more details about an idea!</h2>
 		 				</div>
 		 			</div>
 		 		</div>
@@ -156,8 +157,8 @@ include_once '/includes/discover.inc.php';
 		 		for ($b=0; $b < $i; $b++) { 
 		 			echo '<div class="left-side4-content block background-transparent">
 		 			<div class="right-side1 square block" id="preview-pic">
-		 					<img src="' . $picture[$b] . '" style="width: 100%; height: 100%;">
-
+		 					<a href="ideafocus.php?idea=' . $ideas_id[$b] . '"">
+		 					<img src="' . $picture[$b] . '" style="width: 100%; height: 100%;"></a>
 		 			</div>
 		 			<div class="right-side1 square block background-transparent" id="preview-desc">
 
@@ -170,6 +171,7 @@ include_once '/includes/discover.inc.php';
 	 					';
 			 		echo '</div>
 			 			</div>
+
 		 			</div>';
 		 			 }
 	 			?>

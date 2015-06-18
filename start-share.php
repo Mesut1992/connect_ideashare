@@ -80,9 +80,10 @@ include_once "includes/start-share.inc.php";
 		 			</div>
 		 		</div>
 		 	</div>
+		 	<a href=""></a>
 		 	<!--2nd row-->
 	 		<div class="right-side-large-block block">
-	 			<div class="left-side4-content block">
+	 			
 		 			 <div class="block-content white-color">
 		 			 	<h2>Project Content</h2>		 			 
 		 			 	<br>
@@ -155,7 +156,7 @@ include_once "includes/start-share.inc.php";
 		 			 		</tr> -->
 		 			 	</table>		 			 					 				
 		 			 </div>
-	 			</div>
+	 			
 	 			<!-- <div class="left-side4-content block" style="border-style: dotted solid; background-color: transparent;">
 		 			 <div class="block-content">
 		 			 	<h4>Social media is a key part of CONNECT!</h4>
