@@ -277,6 +277,10 @@ div#container{
 	float: right;
 }
 
+#info-left-box {
+	margin-top: 0px;
+}
+
 .profile-picture {
 	width: 100%;
 }
@@ -293,4 +297,41 @@ div#container{
 	font-weight: bold;
 	
 	margin-left: 1em;
+}
+
+#comment-section {
+	overflow-y: auto; 
+	
+	padding: 32px 32px 32px 32px;
+	
+	height: 100%;
+}
+
+.comment, .comment table {
+	width: 100%;
+}
+
+.comment hr {
+	color: white;
+}
+
+td.comment-text {
+	font-style: italic;
+}
+
+td.comment-like, td.comment-info {
+	padding-top: 10px;
+	padding-bottom: 0;
+}
+
+td.comment-like {
+	float: left;
+}
+
+td.comment-info {
+	float: right;
+}
+.box-960height{
+	width: 640px;
+	height:1280px;
 }

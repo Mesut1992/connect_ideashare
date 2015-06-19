@@ -77,8 +77,6 @@ if($stmt->fetch()) {
 			WHERE id = ?;";
 		
 		$upd_stmt = $mysqli->prepare($prep_upd_stmt);
-		
-		//echo $mysqli->error;
 
 		$upd_stmt->bind_param('sssssssssi', $fname, $lname, $email, $fac, $loc, $webp, $lin, $fb, $twit, $uid);
 		
