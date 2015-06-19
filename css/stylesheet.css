@@ -273,7 +273,7 @@ div#container{
 	margin-top: 1em;
 }
 
-input[type=text], input[type=email], input[type=url], input[type=submit], input[type=password], select {
+input[type=text], input[type=email], input[type=url], input[type=submit], input[type=password], select, textarea {
 	padding: 4px 4px 4px 4px;
 }
 
@@ -309,10 +309,15 @@ input[type=text], input[type=email], input[type=url], input[type=submit], input[
 .msg-fail p {
   font-weight: bold;
   margin-left: 1em;
+}
 #comment-section {
 	overflow-y: auto; 	
 	padding: 32px 32px 32px 32px;
 	height: 100%;
+}
+
+#comment-submit-section textarea {
+	height: 210px;
 }
 
 .comment, .comment table {
@@ -351,3 +356,4 @@ td.comment-info {
 #likes a {
 	font-weight: bold;
 }
+

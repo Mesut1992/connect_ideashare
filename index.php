@@ -97,11 +97,11 @@ include_once __DIR__.'/includes/login_check.php';
 		 			</div>
 		 		</div>
 		 		<div class="right-side2 block">
-		 			<div class="block-content" style="color:white">
+		 			<div class="block-content white-color">
 		 				<h2>WHO ARE WE?</h2><br><br>
 		 				<h4>We are students from the DHBW like you!</h4>
 		 				<br>
-		 				<a href="#" ><div class="white-color"><i class="fa fa-trophy fa-1g"></i>&nbsp Meet us!</div></a>
+	  					<a href="about-us.php"><i class="fa fa-trophy fa-1x"></i>&nbsp Meet us!</a>
 		 			</div>
 		 		</div>
 		 	</div>
@@ -109,14 +109,14 @@ include_once __DIR__.'/includes/login_check.php';
 	 		<div class="block group">
 		  		<div class="left-side2 block">
 		  			<div class="left-side2-content block">
-		  				<div class="block-content" style="color:white;">
+		  				<div class="block-content white-color">
 		  				<h2>SUCCESS MEANS TO BE DIFFERENT!</h2>
 		  				<br>
 		  					<h4>
 		  						All successful people jumped out of the frame! Your success does not depend on your knowledge, it depends on the CONNECTions you have! 
 		  					</h4>	
 		  					<br><br><br><br>
-		  					<a href="#"><i class="fa fa-trophy fa-1x"></i>&nbsp Meet us!</a>
+		  					<a href="about-us.php"><i class="fa fa-trophy fa-1x"></i>&nbsp Meet us!</a>
 		  				</div>
 		  			</div>
 	  			</div>
@@ -125,7 +125,9 @@ include_once __DIR__.'/includes/login_check.php';
 		  		<div class="left-side3 block">
 		  			<div class="left-side3-content block">
 		  				<div class="block-content white-color">
-		  				 placeholder 
+		  				 	 <h3>You like us?</h3>
+		  				 	 <br>
+		  				 	 <p>That's awesome! You can totally mail us if you have something nice to say: <br><a href="mailto:service@mesutkuscu.com">service@mesutkuscu.com</a></p>
 		  				</div>
 		  			</div>
 	  			</div>
@@ -133,8 +135,9 @@ include_once __DIR__.'/includes/login_check.php';
 		  			<div class="left-side4-content block ">
 		  				<div class="block-content">
 		  					<a href="www.dhbw-stuttgart.de"><img src="pics/logo/dhbw.svg"></a>
-		  					<br><br><h2>DHBW Stuttgart</h2>
-		  					<p>Diese Seite ist nur für Studenten der DHBW Stuttgart zugänglich.</p>
+		  					<br><br><h3>DHBW Stuttgart</h3>
+		  					<p>This website is only accessible for students of the DHBW Stuttgart!
+		  					</p>
 		  				</div>
 		  			</div>
 		  			<div class="right-side1 suqare block">

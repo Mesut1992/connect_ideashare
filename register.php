@@ -76,7 +76,7 @@ include_once 'includes/functions.php';
 			 			<div class="preview-under-nav-links block">
 			 				<div class="right-side1 square block">
 			 					<div class="block-content">
-				 				<h2>Personal Information</h2><br>
+				 				<h3>Personal Information</h3><br>
 					 				<table>
 					 					<tr>
 					 						<td>
@@ -125,7 +125,7 @@ include_once 'includes/functions.php';
 			 				</div>
 			 				<div class="right-side1 square block">
 				 				<div class="block-content">
-					 				<h2>Contact Details</h2><br>
+					 				<h3>Contact Details</h3><br>
 					 				<table>
 					 					<tr>
 					 						<td>
