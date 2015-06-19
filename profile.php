@@ -39,7 +39,14 @@ include_once '/includes/profile.inc.php';
 			 			<div class="block-content">	
 			 				<h3>Hi <?php echo $sessuser ?>! :)</h3>
 			 				<hr/>
-			 				<img src="pics/example/photo-original.jpg" alt="Profile Picture" class="profile-picture move-down"/>
+			 				<img src=<?php echo $pic ?> alt="Profile Picture" class="profile-picture move-down"/>
+
+							<form method="post" enctype="multipart/form-data">
+							    <br>Change your profile picture: <br> Format: 160 x 160 px<br>
+							    <input type="file" name="fileToUpload" id="fileToUpload">
+							    <input type="submit" value="Upload Image" name="submit">
+							</form>
+
 						</div>
 				 	</div>
 				 </div>
