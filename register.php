@@ -83,7 +83,7 @@ include_once 'includes/functions.php';
 					 							Surname
 					 						</td>
 					 						<td>
-					 							<input type="text" name="surname" id="surname" maxlength="8" required placeholder="Enter a valid surname"/>
+					 							<input type="text" name="surname" id="surname" maxlength="20" required placeholder="Enter a valid surname"/>
 					 						</td>
 					 					</tr>
 					 					<tr>
@@ -91,7 +91,7 @@ include_once 'includes/functions.php';
 					 							Lastname
 					 						</td>
 					 						<td>
-					 							<input type="text" name="lastname" id="lastname" maxlength="8" required placeholder="Enter a valid lastname"/>
+					 							<input type="text" name="lastname" id="lastname" maxlength="20" required placeholder="Enter a valid lastname"/>
 					 						</td>
 					 					</tr>
 					 					<tr>
@@ -99,7 +99,7 @@ include_once 'includes/functions.php';
 					 							Faculty
 					 						</td>
 					 						<td>
-					 							<input type="text" name="faculty" id="faculty" maxlength="8" required placeholder="Enter your faculty"/>
+					 							<input type="text" name="faculty" id="faculty" maxlength="20" required placeholder="Enter your faculty"/>
 					 						</td>
 					 					</tr>
 					 					<tr>
@@ -107,7 +107,7 @@ include_once 'includes/functions.php';
 					 							LinkIn(CV)
 					 						</td>
 					 						<td>
-					 							<input type="text" name="LinkIn" id="linkIn" maxlength="8" placeholder="Enter your linkIn URL"/>
+					 							<input type="text" name="LinkIn" id="linkIn" maxlength="255" placeholder="Enter your linkIn URL"/>
 					 						</td>
 					 					</tr>
 					 					<tr>
@@ -115,7 +115,7 @@ include_once 'includes/functions.php';
 					 							Location
 					 						</td>
 					 						<td>
-					 							<input type="text" name="location" id="location" maxlength="8" required placeholder="Enter your City"/>
+					 							<input type="text" name="location" id="location" maxlength="20" required placeholder="Enter your City"/>
 					 						</td>
 					 					</tr>
 					 				</table>
@@ -140,7 +140,7 @@ include_once 'includes/functions.php';
 					 							E-Mail
 					 						</td>
 					 						<td>
-					 							<input title="valid mail"  type="email" name="email" id="email" maxlength="30" autocomplete="on" required placeholder="Enter a valid email address" pattern="[a-zA-Z]+[@][a-zA-Z]+[.][a-zA-Z]+"/>
+					 							<input title="valid mail"  type="email" name="email" id="email" maxlength="255" autocomplete="on" required placeholder="Enter a valid email address" pattern="[a-zA-Z.,-_]+[@][a-zA-Z]+[.][a-zA-Z]+"/>
 					 						</td>
 					 					</tr>
 					 					<tr>
@@ -172,7 +172,7 @@ include_once 'includes/functions.php';
 					 							Facebook
 					 						</td>
 					 						<td>
-					 							<input type="text" name="facebook" id="facebook" maxlength="8" placeholder="Enter a Facebook URL"/>
+					 							<input type="text" name="facebook" id="facebook" maxlength="255" placeholder="Enter a Facebook URL"/>
 					 						</td>
 					 					</tr>
 					 					<!-- <tr>

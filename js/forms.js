@@ -17,7 +17,7 @@ function formhash(form, password) {
 }
  
 function regformhash(form, uid, email, password, conf) {
-    form.submitButton.click();   
+    
     //Register
     // Check each field has a value
     if (uid.value === ""        || 
@@ -62,6 +62,6 @@ function regformhash(form, uid, email, password, conf) {
     conf.value = "";
  
     // Finally submit the form. 
-    form.submit();
+    form.submitButton.click();   
     return true;
 }

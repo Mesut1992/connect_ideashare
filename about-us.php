@@ -115,7 +115,7 @@
 		  		<div class="left-side3 block">
 		  			<div class="left-side3-content block">
 		  				<div class="block-content">
-		  				placeholder..
+		  				 This page should just show you, that we could advertise ourself.
 		  				</div>
 		  			</div>
 	  			</div>

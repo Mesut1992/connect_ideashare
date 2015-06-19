@@ -74,6 +74,7 @@ include_once '/includes/profile.inc.php';
 		 			</div>
 		 			<div class="left-side4 block grey-background" id="">
 		 				<div class="block-content white-color">
+		 				<h3>Welcome, in the profile view!</h3><br>
 		 					<?php 
 		 						if($updated)
 		 							echo '
