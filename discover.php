@@ -90,7 +90,7 @@ include_once '/includes/discover.inc.php';
 								  		Search
 								  	</td>
 								  	<td>
-								  		<input name="Search"></input>
+								  		<input name="Search" type="text"></input>
 								  	</td>
 								  </tr>
 								  <tr>							  	

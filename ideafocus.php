@@ -46,7 +46,7 @@ include_once '/includes/ideafocus.inc.php';
 			 				<br>
 			 				<hr>
 			 				<p id="likes">
-			 					<a href="ideafocus.php?idea=<?php echo $idea_id ?>&like=1">&#x1f44d; this idea! </a>
+			 					<a href="ideafocus.php?idea=<?php echo $idea_id ?>&like=1"><i class="fa fa-thumbs-o-up"></i> this idea! </a>
 			 					(<?php echo $likes_count.($likes_count == 1 ? " Like" : " Likes") ?>)
 			 					</p>
 			 			</div>
