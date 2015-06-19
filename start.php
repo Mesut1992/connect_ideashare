@@ -56,18 +56,16 @@ include_once "includes/login_check.php";
 						    <td><a href="discover.php">&nbspDISCOVER &nbsp</a></td>
 						    <td><i class="fa fa-minus fa-1g"></i></td>
 						   
-						    <td class="active"><a href="start.php">&nbspSTART&nbsp</a></td> 
+						    <td class="active"><a href="start-share.php">&nbspSTART&nbsp</a></td> 
 						    <td><i class="fa fa-minus fa-1g"></i></td>
-
+						   
 						    <td><a href="about-us.php">&nbspABOUT US&nbsp</a></td>
 						    <td><i class="fa fa-minus fa-1g"></i></td>
 						   
-						    <td><a href="profile.php">&nbspPROFILE <i class="fa fa-caret-down">&nbsp</i></a></td>
+						    <td><a href="profile.php">&nbspPROFILE</a></td>
 						    <td><i class="fa fa-minus fa-1g"></i></td>
 						    
-						    <td><a href="logout.php">&nbspLOG OUT</a></td>						   				  
-
-						    </td>
+						    <td><a href="logout.php">&nbspLOG OUT &nbsp</a></td>
 						  </tr>
 						</table>
 		 			</div>
@@ -92,7 +90,10 @@ include_once "includes/login_check.php";
 		 	<!-- <div class="block-group"> -->
 		 		<div class="right-side1 suqare block">
 		 			<div class="block-content">
-		 				<p>We all know this situation from the time in elementary school. Your neighbor does not want you to read the solutions of his exam so he hides it! Let me tell you one thing: Always share your ideas and solutions! That is the first step in limiting your chances! If you give everything what you have, you will be able to make connections, you will be successful and these people not!</p>
+		 				<p>We all know this situation from the time in elementary school. 
+		 				Your neighbor does not want you to read the solutions of his exam so he hides it! 
+		 				Let me tell you one thing: Always share your ideas and solutions! That is the first step in limiting your chances! 
+		 				If you give everything what you have, you will be able to make connections, you will be successful and these people not!</p>
 		 			</div>
 		 		</div>
 		 		<div class="right-side2 block">
@@ -155,9 +156,11 @@ include_once "includes/login_check.php";
 		  			<div class="left-side3-content block">
 		  				<div class="block-content">
 		  				<h4>Why binding social media into this app?</h4>
-		  				<p>Networking. That is the answer.<br> You will be able to collaborate through social media like Facebook. You may create events, meetings, pages or groups. And the best thing is that, that your idea brought you together!</p><br>
+		  				<p>Networking. That is the answer.<br> You will be able to collaborate through social media like Facebook. 
+		  				You may create events, meetings, pages or groups. And the best thing is that, that your idea brought you together!</p><br>
 		  				<h4>I don't have Facebook, do I need it?</h4>
-		  				<p>No, it is not necassary. But you will miss a lot of features of this app! To organise your collaboration with people will be very difficult and time consuming without social media.</p><br>
+		  				<p>No, it is not necassary. But you will miss a lot of features of this app! To organise your collaboration 
+		  				with people will be very difficult and time consuming without social media.</p><br>
 		  				<h4>My idea is just a prototype</h4>
 		  				<p>Who cares! You will get feedback and new friends. So share it! Let people know who you are! </p><br>
 
@@ -168,7 +171,7 @@ include_once "includes/login_check.php";
 		  			</div>
 	  			</div>
 	  			<div class="left-side4 block">
-		  			<div class="left-side4-content block white-color">
+		  			<div class="left-side4-content block black-color">
 		  			<div class="block-content">
 		  				<h2><i class="fa fa-hand-o-up"></i> Do you see the girl with the wonderful hair?</h2>
 		  				<br>

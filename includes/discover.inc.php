@@ -11,7 +11,7 @@ if(isset($_GET["category"]) && isset($_GET["sort"]) && ($_GET["category"] != "Al
 }
 else {
     $prep_stmt = "SELECT ideas_id, title, abstract, description, category, 
-    user_id, username, email, pic FROM ideas, members
+    user_id, username, email, ideas.pic FROM ideas, members
     WHERE members.id = ideas.user_id;";
     $stmt = $mysqli->prepare($prep_stmt);
 }

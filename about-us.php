@@ -49,25 +49,24 @@
 						    <td><a href="discover.php">&nbspDISCOVER &nbsp</a></td>
 						    <td><i class="fa fa-minus fa-1g"></i></td>
 						   
-						    <td><a href="start.php">&nbspSTART&nbsp</a></td> 
+						    <td><a href="start-share.php">&nbspSTART&nbsp</a></td> 
 						    <td><i class="fa fa-minus fa-1g"></i></td>
-						   
-						   
 						   
 						    <td class="active"><a href="about-us.php">&nbspABOUT US&nbsp</a></td>
 						    <td><i class="fa fa-minus fa-1g"></i></td>
 						   
-						    <td><a href="profile.php">&nbspPROFILE <i class="fa fa-caret-down">&nbsp</i></a></td>
+						    <td><a href="profile.php">&nbspPROFILE</a></td>
 						    <td><i class="fa fa-minus fa-1g"></i></td>
 						    
 						    <td><a href="logout.php">&nbspLOG OUT &nbsp</a></td>
-
-						    </td>
 						  </tr>
 						</table>
 		 			</div>
-		 			<div class="preview-under-nav-links block">
-		 				<h4>SO MUCH DETAILS ABOUT US OMG OMG OMG</h4>
+		 			<div class="preview-under-nav-links block white-color block-content">
+		 				<h1>You're reading the About us-page?</h1>
+		 				<h4>Nobody is reading this. Seems like you're something special :P</h4>
+		 				<br>
+		 				<p>But if you're still interested, feel free to keep on reading below</p>
 		 			</div>
 		 		</div>
 		 	</div>

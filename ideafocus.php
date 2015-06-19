@@ -60,13 +60,13 @@ include_once '/includes/ideafocus.inc.php';
 						    <td><a href="discover.php">&nbspDISCOVER &nbsp</a></td>
 						    <td><i class="fa fa-minus fa-1g"></i></td>
 						   
-						    <td><a href="start.php">&nbspSTART&nbsp</a></td> 
+						    <td><a href="start-share.php">&nbspSTART&nbsp</a></td> 
 						    <td><i class="fa fa-minus fa-1g"></i></td>
 						   
 						    <td><a href="about-us.php">&nbspABOUT US&nbsp</a></td>
 						    <td><i class="fa fa-minus fa-1g"></i></td>
 						   
-						    <td><a href="login.php">&nbspPROFILE</a></td>
+						    <td><a href="profile.php">&nbspPROFILE</a></td>
 						    <td><i class="fa fa-minus fa-1g"></i></td>
 						    
 						    <td><a href="logout.php">&nbspLOG OUT &nbsp</a></td>

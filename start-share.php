@@ -43,9 +43,9 @@ include_once "includes/start-share.inc.php";
 				 		<div id="fixed-settings-bar" class="left-side1 block">
 				 			<div class="block-content">	
 				 			<h4>Tips and Tricks</h4><br>
-				 				<p>There are no tips and tricks here yet. Yeah, that sucks!</p>
+				 				<p>There are no tips and tricks here. Yet. We know, that sucks!<br><i class="fa fa-cogs"></i> We're working hard on fixing this.</p>
 				 			<br>
-				 			<h4>In short: DHBW will not sell your data. Your data is save.</h4><p>And by the way.. who would be interested anyway? </p>
+				 			<h4>In short: DHBW will not sell your data.<br>Your data is pretty save.</h4><p>Anyways... who would be interested? </p>
 			 				</div>
 			 			</div>
 		 			</div>
@@ -58,24 +58,23 @@ include_once "includes/start-share.inc.php";
 						    <td><a href="discover.php">&nbspDISCOVER &nbsp</a></td>
 						    <td><i class="fa fa-minus fa-1g"></i></td>
 						   
-						    <td class="active"><a href="start.php" >&nbspSTART&nbsp</a></td> 
-						    <td><i class="fa fa-minus fa-1g"></i></td>
-						    
-						    <td><a href="index.php">&nbspABOUT US&nbsp</a></td>
+						    <td class="active"><a href="start-share.php">&nbspSTART&nbsp</a></td> 
 						    <td><i class="fa fa-minus fa-1g"></i></td>
 						   
-						    <td><a href="login.php">&nbspLOGIN <i class="fa fa-caret-down">&nbsp</i></a></td>
+						    <td><a href="about-us.php">&nbspABOUT US&nbsp</a></td>
+						    <td><i class="fa fa-minus fa-1g"></i></td>
+						   
+						    <td><a href="profile.php">&nbspPROFILE</a></td>
 						    <td><i class="fa fa-minus fa-1g"></i></td>
 						    
-						    <td><a href="logout.php">&nbspLOG OUT</a></td>						   				  
-						    </td>
+						    <td><a href="logout.php">&nbspLOG OUT &nbsp</a></td>
 						  </tr>
 						</table>
 		 			</div>
 		 			<div class="preview-under-nav-links block">
 		 					<div class="block-content white-color">
 			 				<h2>Information</h2><br>
-				 			<p>On this page you can share your ideas! If you have a facebook page for your idea already, do not forget to link it.</p>
+				 			<p>Share your ideas on this page! If you already have a facebook-site for your idea, don't forget to link it.<br><a href="start.php"><i class="fa fa-hand-o-right"></i>&nbsp;New here? Read the introduction!</a></p>
 				 			<br><br>
 				 			<?php 
 		 						if($updated)
@@ -172,8 +171,9 @@ include_once "includes/start-share.inc.php";
 		 			 				<textarea placeholder="type here"></textarea>
 		 			 			</td>
 		 			 		</tr> -->
-		 			 	</table>		 			 					 				
-		 			 </div>
+		 			 	</table>	
+	 			 	</form>	 			 					 				
+	 			 </div>
 	 			
 	 			<!-- <div class="left-side4-content block" style="border-style: dotted solid; background-color: transparent;">
 		 			 <div class="block-content">

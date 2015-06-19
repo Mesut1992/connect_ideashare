@@ -49,21 +49,19 @@ include_once '/includes/profile.inc.php';
 		 			<div class="navigation-links block">
 			 			<table class="navigation-links-table">
 						  <tr>
-						    <td class="active"><a href="discover.php">&nbspDISCOVER &nbsp</a></td>
+						    <td><a href="discover.php">&nbspDISCOVER &nbsp</a></td>
 						    <td><i class="fa fa-minus fa-1g"></i></td>
 						   
-						    <td><a href="start.php">&nbspSTART&nbsp</a></td> 
+						    <td><a href="start-share.php">&nbspSTART&nbsp</a></td> 
 						    <td><i class="fa fa-minus fa-1g"></i></td>
 						   
 						    <td><a href="about-us.php">&nbspABOUT US&nbsp</a></td>
 						    <td><i class="fa fa-minus fa-1g"></i></td>
 						   
-						    <td><a href="profile.php">&nbspPROFILE <i class="fa fa-caret-down">&nbsp</i></a></td>
+						    <td class="active"><a href="profile.php">&nbspPROFILE</a></td>
 						    <td><i class="fa fa-minus fa-1g"></i></td>
 						    
 						    <td><a href="logout.php">&nbspLOG OUT &nbsp</a></td>
-
-						    </td>
 						  </tr>
 						</table>
 		 			</div>
