@@ -3,12 +3,18 @@
 	include_once 'includes/functions.php';
 	include_once 'includes/process_login.php';
 
+	$reg_success = false;
+	
 	if(login_check($mysqli) == true){
 		$logged = 'in';
 		header('Location: index.php');
 
 	}else{
 		$logged = 'out';
+	}
+	
+	if(isset($_GET["register"]) && ($register_status = $_GET["register"]) == "success") {
+		$reg_success = true;
 	}
 ?>
 <!DOCTYPE html>
@@ -55,12 +61,12 @@
 				 			<p>CONNECT can only be used if you are logged in!
 							<br><br>
 				 			<h4>Reasons to register</h4><br>
-				 				<p><i class="fa fa-hand-o-right fa-1g"></i>You will have access </p>
-				 				<p><i class="fa fa-hand-o-right fa-1g"></i>You need to memorize another password </p>
+				 				<p><i class="fa fa-hand-o-right fa-1g"></i>&nbsp;You will have access </p>
+				 				<p><i class="fa fa-hand-o-right fa-1g"></i>&nbsp;You need to memorize another password </p>
 				 					<p>BTW, we have no "<i>password recovery</i>" option..</p>
-				 				<p><i class="fa fa-hand-o-right fa-1g"></i>You will be happy</p>
-				 				<p><i class="fa fa-hand-o-right fa-1g"></i>You will get spam mails from us</p>
-				 				<p><i class="fa fa-hand-o-right fa-1g"></i>We will read your password and try to hack other accounts of yours</p>
+				 				<p><i class="fa fa-hand-o-right fa-1g"></i>&nbsp;You will be happy</p>
+				 				<p><i class="fa fa-hand-o-right fa-1g"></i>&nbsp;You will get spam mails from us</p>
+				 				<p><i class="fa fa-hand-o-right fa-1g"></i>&nbsp;We will read your password and try to hack other accounts of yours</p>
 			 				</div>
 			 			</div>
 		 			</div>
@@ -82,6 +88,19 @@
 		 			<div class="preview-under-nav-links block">
 		 				<div class="right-side1 square block">
 		 					<div class="block-content">
+		 					<?php 
+		 					
+		 						if($reg_success) {
+		 							echo '
+								<div class="msg-success">
+			 						<p>You are now registered!<br>
+									Login with your mail and passwort below</p>
+			 					</div>
+			 					<br>
+									';
+		 						}
+		 					
+		 					?>
 				 				<h2>LOGIN</h2><br>
 			 					<form method="POST" name="login_form">
 			 					<table>

@@ -66,12 +66,10 @@ include_once 'includes/functions.php';
 						    <td><i class="fa fa-minus fa-1g"></i></td>
 						    
 						    <td><a href="login.php">&nbspLOGIN &nbsp</a></td>
-
-						    </td>
 						  </tr>
 						</table>
 		 			</div>
-		 			<form action="<?php echo esc_url($_SERVER['PHP_SELF']); ?>"
+		 			<form action="register.php"
 			 				method="post" name="registration_form">
 			 			<div class="preview-under-nav-links block">
 			 				<div class="right-side1 square block">
@@ -107,7 +105,7 @@ include_once 'includes/functions.php';
 					 							LinkIn(CV)
 					 						</td>
 					 						<td>
-					 							<input type="text" name="LinkIn" id="linkIn" maxlength="255" placeholder="Enter your linkIn URL"/>
+					 							<input type="url" name="LinkIn" id="linkIn" maxlength="255" placeholder="Enter your linkIn URL"/>
 					 						</td>
 					 					</tr>
 					 					<tr>
@@ -172,7 +170,7 @@ include_once 'includes/functions.php';
 					 							Facebook
 					 						</td>
 					 						<td>
-					 							<input type="text" name="facebook" id="facebook" maxlength="255" placeholder="Enter a Facebook URL"/>
+					 							<input type="url" name="facebook" id="facebook" maxlength="255" placeholder="Enter a Facebook URL"/>
 					 						</td>
 					 					</tr>
 					 					<!-- <tr>
@@ -189,9 +187,9 @@ include_once 'includes/functions.php';
 				 				</div>		
 			 				</div>
 			 			</div>
+				 	</form>
 			 		</div>
 			 	</div>
-			 	</form>
 		 	<!--2nd row-->
 	 		<div class="right-side-large-block block">
 	 		

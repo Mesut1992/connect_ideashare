@@ -46,9 +46,9 @@ include_once __DIR__.'/includes/login_check.php';
 				 				<h4>This is the perfect place to share ideas. The place for your Innovation! Collaborate, Connect and Carrier.</h4><br>
 				 				<p>Ever wanted to share your idea over the campus? HERE YOU GO! Thank us later, aligator.</p>
 				 				<br><br><br>
-								<a href="#" style="color:black"><i class="fa fa-connectdevelop fa-1x"></i>&nbspLearn to use the app!</a>
+								<a href="start.php" style="color:black"><i class="fa fa-connectdevelop fa-1x"></i>&nbspLearn to use the app!</a>
 				 				<br><br>
-				 				<a href="#" style="color:black"><i class="fa fa-eye fa-1x"></i>&nbsp Discover Ideas!</a>
+				 				<a href="discover.php" style="color:black"><i class="fa fa-eye fa-1x"></i>&nbsp Discover Ideas!</a>
 				 				<br>
 				 		</div>
 				 	</div>

@@ -78,12 +78,27 @@ if (isset($_POST['username'], $_POST['email'], $_POST['p'])) {
         $password = hash('sha512', $password . $random_salt);
  
         // Insert the new user into the database 
-        if ($insert_stmt = $mysqli->prepare("INSERT INTO members (username, email, password, salt) VALUES (?, ?, ?, ?)")) {
-            $insert_stmt->bind_param('ssss', $username, $email, $password, $random_salt);
+        if ($insert_stmt = $mysqli->prepare("INSERT 
+        		INTO members (username, email, password, salt, surname, lastname, faculty, location, linkin, facebook) 
+        		VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)")) {
+            
+        	$surname = (isset($_POST["surname"]) ? $_POST["surname"] : "");
+            $lastname = (isset($_POST["lastname"]) ? $_POST["lastname"] : "");
+            $factulty = (isset($_POST["faculty"]) ? $_POST["faculty"] : "");
+            $linkin = (isset($_POST["linkIn"]) ? $_POST["linkIn"] : "");
+            $location = (isset($_POST["location"]) ? $_POST["location"] : "");
+            $facebook = (isset($_POST["facebook"]) ? $_POST["facebook"] : "");
+             
+            
+        	$insert_stmt->bind_param('ssssssssss', 
+        			$username, $email, $password, $random_salt, $surname, $lastname, $factulty, $location, $linkin, $facebook);
             // Execute the prepared query.
             if (! $insert_stmt->execute()) {
                 echo "failed to register!";
                 //header('Location: ../error.php?err=Registration failure: INSERT');
+            }
+            else {
+            	header("Location: login.php?register=success");
             }
         }
         //header('Location: ./register_success.php');

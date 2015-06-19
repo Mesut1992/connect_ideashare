@@ -292,8 +292,9 @@ input[type=text], input[type=email], input[type=url], input[type=submit], input[
 
 .msg-success {
 	background-color: #1ABC9C;
-	height: 2em;
+	min-height: 2em;
 	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 .msg-success p {
@@ -302,8 +303,9 @@ input[type=text], input[type=email], input[type=url], input[type=submit], input[
 }
 .msg-fail {
   background-color: #BC361A;
-  height: 2em;
-  padding-top: 5px;
+	min-height: 2em;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 .msg-fail p {
