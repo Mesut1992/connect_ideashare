@@ -37,7 +37,7 @@ if($stmt->fetch()) {
 	$fb = $ifb;
 	$twit = $itwit;
 	
-	$stmt->free_result();
+	$stmt->close();
 	
 	if((isset($_GET["firstname"]) || isset($_GET["lastname"]) || isset($_GET["email"])
 		|| isset($_GET["faculty"]) || isset($_GET["location"]) || isset($_GET["webpage"]) 

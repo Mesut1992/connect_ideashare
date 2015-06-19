@@ -335,3 +335,11 @@ td.comment-info {
 	width: 640px;
 	height:1280px;
 }
+
+#likes {
+	float: right;
+}
+
+#likes a {
+	font-weight: bold;
+}

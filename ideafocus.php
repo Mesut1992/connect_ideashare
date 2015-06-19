@@ -38,11 +38,17 @@ include_once '/includes/ideafocus.inc.php';
 						 <img src="pics/example/photo-original (2).jpg" class="full-img"/>
 						 
 						 <div id="info-left-box" class="block-content">
-					 				<h3>Category: </h3><p><?php echo $category?></p>
-					 				<br>
-					 				<h3>Created by:</h3><a href="profile.php?user=<?php echo $user_id ?>"><p><?php echo $uname ?> (<?php echo $email ?>)</a></p>
-					 				<br>
-					 				<h3>Creation Date: </h3><p><?php echo $creation_date?></p>
+			 				<h3>Category: </h3><p><?php echo $category?></p>
+			 				<br>
+			 				<h3>Created by:</h3><a href="profile.php?user=<?php echo $user_id ?>"><p><?php echo $uname ?> (<?php echo $email ?>)</a></p>
+			 				<br>
+			 				<h3>Creation Date: </h3><p><?php echo $creation_date?></p>
+			 				<br>
+			 				<hr>
+			 				<p id="likes">
+			 					<a href="ideafocus.php?idea=<?php echo $idea_id ?>&like=1">&#x1f44d; like </a>
+			 					(<?php echo $likes_count.($likes_count == 1 ? " Like" : " Likes") ?>)
+			 					</p>
 			 			</div>
 				 </div>
 		 	</div>
@@ -87,7 +93,7 @@ include_once '/includes/ideafocus.inc.php';
 	 						<hr>
 	 						<table>
 	 							<tr><td class="comment-text">This is the first comment</td></tr>
-	 							<tr><td class="comment-like"><a href="ideafocus.php?idea=4&like=1">LIKE</a></td><td class="comment-info">Mesut Kuscu on Monday, 01.01.1999</td></tr>
+	 							<tr><td class="comment-info">Mesut Kuscu on Monday, 01.01.1999</td></tr>
 	 							<tr><td><hr></td></tr>
 	 						</table>
 	 					</div>
