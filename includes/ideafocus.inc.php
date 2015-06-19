@@ -33,7 +33,7 @@ if(isset($_GET["idea"]) && isset($_GET["like"]) && $_GET["like"] == 1) {
 	
 	$stmt = $mysqli->prepare($prep_stmt);
 	
-	$stmt->bind_param('iis', $user_id, $idea_id);
+	$stmt->bind_param('ii', $user_id, $idea_id);
 	
 	$stmt->execute();
 	
@@ -52,7 +52,7 @@ if (isset($_GET["idea"])) {
     user_id, username, email, idea_creation_date, COUNT(likes.idea_id) AS likes_count FROM ideas, members, likes
     WHERE members.id = ideas.user_id AND likes.idea_id = ideas.ideas_id AND ideas_id = ?";
     $stmt = $mysqli->prepare($prep_stmt);
-    $stmt->bind_param('s', $_GET["idea"]);
+    $stmt->bind_param('i', $idea_id);
     $stmt->execute();
     $stmt->bind_result($user_id, $title, $abstract, $description, $category, $uid, $uname, $email, $creation_date, $likes_count);
     $picture = "pics/example/photo-original (2).jpg";
@@ -61,6 +61,29 @@ if (isset($_GET["idea"])) {
     $stmt->close();
     
     // fetch comments
+    $prep_stmt = "SELECT comment, update_date, members.id, surname, lastname 
+    		FROM comments, members WHERE comments.members_id = members.id AND comments.idea_id = ?;";
+    $stmt = $mysqli->prepare($prep_stmt);
+    $stmt->bind_param('i', $idea_id);
+    $stmt->execute();
+
+    $stmt->bind_result($ccmt, $cupddt, $cmid, $csname, $clname);
+    
+    $comments = array();
+    $update_dates = array();
+    $members_id = array();
+    $surnames = array();
+    $lastnames = array();
+    
+    while($stmt->fetch()) {
+    	array_push($comments, $ccmt);
+    	array_push($update_dates, $cupddt);
+    	array_push($members_id, $cmid);
+    	array_push($surnames, $csname);
+    	array_push($lastnames, $clname);
+    }
+    
+    $stmt->close();
 }
 else{
     header('Location: discover.php');

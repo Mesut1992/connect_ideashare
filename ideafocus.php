@@ -46,7 +46,7 @@ include_once '/includes/ideafocus.inc.php';
 			 				<br>
 			 				<hr>
 			 				<p id="likes">
-			 					<a href="ideafocus.php?idea=<?php echo $idea_id ?>&like=1">&#x1f44d; like </a>
+			 					<a href="ideafocus.php?idea=<?php echo $idea_id ?>&like=1">&#x1f44d; this idea! </a>
 			 					(<?php echo $likes_count.($likes_count == 1 ? " Like" : " Likes") ?>)
 			 					</p>
 			 			</div>
@@ -57,7 +57,7 @@ include_once '/includes/ideafocus.inc.php';
 		 			<div class="navigation-links block">
 			 			<table class="navigation-links-table">
 						  <tr>
-						    <td class="active"><a href="discover.php">&nbspDISCOVER &nbsp</a></td>
+						    <td><a href="discover.php">&nbspDISCOVER &nbsp</a></td>
 						    <td><i class="fa fa-minus fa-1g"></i></td>
 						   
 						    <td><a href="start.php">&nbspSTART&nbsp</a></td> 
@@ -66,12 +66,10 @@ include_once '/includes/ideafocus.inc.php';
 						    <td><a href="about-us.php">&nbspABOUT US&nbsp</a></td>
 						    <td><i class="fa fa-minus fa-1g"></i></td>
 						   
-						    <td><a href="login.php">&nbspPROFILE <i class="fa fa-caret-down">&nbsp</i></a></td>
+						    <td><a href="login.php">&nbspPROFILE</a></td>
 						    <td><i class="fa fa-minus fa-1g"></i></td>
 						    
 						    <td><a href="logout.php">&nbspLOG OUT &nbsp</a></td>
-
-						    </td>
 						  </tr>
 						</table>
 		 			</div>
@@ -89,19 +87,34 @@ include_once '/includes/ideafocus.inc.php';
 	  			<div class="box-960height block" >
 	  			<div class="left-side4 block ">
 	 				<div id="comment-section">
-	 					<div class="comment">
+	 					<?php 
+	 						for($i = 0; $i < count($comments); $i++) {
+	 							echo '
+						<div class="comment">
 	 						<hr>
 	 						<table>
-	 							<tr><td class="comment-text">This is the first comment</td></tr>
-	 							<tr><td class="comment-info">Mesut Kuscu on Monday, 01.01.1999</td></tr>
+	 							<tr><td class="comment-text">'.$comments[$i].'</td></tr>
+	 							<tr><td class="comment-info"><a href="profile.php?user='.$members_id[$i].'">'.
+	 								$surnames[$i].' '.$lastnames[$i].'</a> on '.$update_dates[$i].
+	 								'</td></tr>
 	 							<tr><td><hr></td></tr>
 	 						</table>
-	 					</div>
+	 					</div>	
+								';
+	 						}
+	 						
+	 						if(count($comments) == 0) {
+	 							echo '
+						<h3>No comments yet. So hurry up and submit the first one!</p>
+								';
+	 						}
+	 					?>
+	 					
 	 				</div>
 	 			
 	 			<div id="explenationbox-discoverpage" class="preview-under-nav-links block">
 	 				<div id="comment-submit-section" class="block-content">
-	 					<form action="ideafocus.php?idea=4" method="post">
+	 					<form action="ideafocus.php?idea=<?php echo $idea_id ?>" method="post">
 	 						<table>
 	 							<tr>
 		 							<td>
