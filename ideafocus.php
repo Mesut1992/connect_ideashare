@@ -28,28 +28,36 @@ include_once '/includes/ideafocus.inc.php';
 	<div id="header">	
 	 	<div class="block-group">
 
-		 	<div style="height:960px;" class="logo-slide block"> 
+		 	<div style="height:1280px;" class="logo-slide block"> 
 		 			<a href="index.php"><div id="fixed-header-bar" class="logo block">
 		 				<img src="pics/logo/logo_connect_transparent.png"/>
 		 			</div></a>
 			 			<div id="empty-box-190px">
-			 				
 			 			</div>
 			 		<div class="float-right-container">
-			 		<div class="block-content">
-			 			<h2><?php echo $title ?></h2><br>
-			 		</div>
-				 		<div id="fixed-settings-bar" class="left-side1 block">
-					 	 <img src="pics/example/photo-original (2).jpg" class="full-img"/>
-					 	</div>
-					 </div>
+						 <img src="pics/example/photo-original (2).jpg" class="full-img"/>
+						 
+						 <div id="info-left-box" class="block-content">
+			 				<h3>Category: </h3><p><?php echo $category?></p>
+			 				<br>
+			 				<h3>Created by:</h3><a href="profile.php?user=<?php echo $user_id ?>"><p><?php echo $uname ?> (<?php echo $email ?>)</a></p>
+			 				<br>
+			 				<h3>Creation Date: </h3><p><?php echo $creation_date?></p>
+			 				<br>
+			 				<hr>
+			 				<p id="likes">
+			 					<a href="ideafocus.php?idea=<?php echo $idea_id ?>&like=1">&#x1f44d; this idea! </a>
+			 					(<?php echo $likes_count.($likes_count == 1 ? " Like" : " Likes") ?>)
+			 					</p>
+			 			</div>
+				 </div>
 		 	</div>
 		 	<div class="navigation block">
 		 		<div class="content block">
 		 			<div class="navigation-links block">
 			 			<table class="navigation-links-table">
 						  <tr>
-						    <td class="active"><a href="discover.php">&nbspDISCOVER &nbsp</a></td>
+						    <td><a href="discover.php">&nbspDISCOVER &nbsp</a></td>
 						    <td><i class="fa fa-minus fa-1g"></i></td>
 						   
 						    <td><a href="start.php">&nbspSTART&nbsp</a></td> 
@@ -58,59 +66,72 @@ include_once '/includes/ideafocus.inc.php';
 						    <td><a href="about-us.php">&nbspABOUT US&nbsp</a></td>
 						    <td><i class="fa fa-minus fa-1g"></i></td>
 						   
-						    <td><a href="login.php">&nbspPROFILE <i class="fa fa-caret-down">&nbsp</i></a></td>
+						    <td><a href="login.php">&nbspPROFILE</a></td>
 						    <td><i class="fa fa-minus fa-1g"></i></td>
 						    
 						    <td><a href="logout.php">&nbspLOG OUT &nbsp</a></td>
-
-						    </td>
 						  </tr>
 						</table>
 		 			</div>
 		 			<div class="preview-under-nav-links block" id="explenationbox-discoverpage">
 		 				<div class="block-content white-color">
+		 					<h1><?php echo $title ?></h1>
 		 					<h3>Abstract: </h3> <p><?php echo $abstract?></p>
 		 					<br>
 			 				<h3>Description: </h3><p><?php echo $description ?></p>
-			 				<br>
-			 				<h3>Category: </h3><p><?php echo $category?></p>
-			 				<br>
-			 				<h3>Creation Date: </h3><p><?php echo $creation_date?></p>
 		 				</div>
 		 			</div>
 		 		</div>
-		 	</div>
-		 	<!--2nd row--> <!-- All ideas are previewd here!-->
-	 		<div class="right-side-large-block block">
-	 			<!-- HIER KOMMT DIE KOMMENT FUNKTION HIN!!!!-->
-
-	 		<!--3rd row-->
-  			<div id="fixed-left-side4" class="left-side4 block">
-	  			<div class="right-side1 suqare block">
-	  				<div class="block-content">
-	  					<h2>User Data</h2><br>
-	  					<h3>Name: </h3> <?php echo $uname ?>
-	  					<br><br>
-	  					<h3>E-Mail: </h3> <?php echo $email ?>
-	  					<br><br><h3>More <strong>Information</strong> about the author?!</h3><br>
-	  				 	<?php echo '<a href="profile.php?user=' . $user_id . '"> <h3>Click here!!</h3> </a>'; ?>
-	 				</div>
-	 			</div>
-	 			<div class="left-side4-content background-transparent block">
-		 				<div class="block-content">
-		 				<br><br>
-		 					<p id="copyright">&copy; 2015 
-		 					<br>Mesut Kuscu <br>
-		 					<a href="mailto:mail@mesutkuscu.com">mail@mesutkuscu.com</a> <br>
-		 					<br><br>
-		 					in behalf of <i>Duale Hochschule Baden-W&uuml;rttemberg</i><br>
-		 					<a href="http://www.dhbw.de/" target="_blank">www.dhbw.de</a> <br>
-		 					<a href="mailto:bergmann@dhbw.de">bergmann@dhbw.de</a> <br>
-							Telefon  0711 / 320 660-0<br>
-		 					</p>
-		 				</div>
-		 			</div>
+		 	
   			</div>
+	  			<div class="box-960height block" >
+	  			<div class="left-side4 block ">
+	 				<div id="comment-section">
+	 					<?php 
+	 						for($i = 0; $i < count($comments); $i++) {
+	 							echo '
+						<div class="comment">
+	 						<hr>
+	 						<table>
+	 							<tr><td class="comment-text">'.$comments[$i].'</td></tr>
+	 							<tr><td class="comment-info"><a href="profile.php?user='.$members_id[$i].'">'.
+	 								$surnames[$i].' '.$lastnames[$i].'</a> on '.$update_dates[$i].
+	 								'</td></tr>
+	 							<tr><td><hr></td></tr>
+	 						</table>
+	 					</div>	
+								';
+	 						}
+	 						
+	 						if(count($comments) == 0) {
+	 							echo '
+						<h3>No comments yet. So hurry up and submit the first one!</p>
+								';
+	 						}
+	 					?>
+	 					
+	 				</div>
+	 			
+	 			<div id="explenationbox-discoverpage" class="preview-under-nav-links block">
+	 				<div id="comment-submit-section" class="block-content">
+	 					<form action="ideafocus.php?idea=<?php echo $idea_id ?>" method="post">
+	 						<table>
+	 							<tr>
+		 							<td>
+		 								<textarea name="comment" placeholder="Type your comment here!"></textarea>
+		 							</td>
+	 							</tr>
+	 							<tr>
+		 							<td>
+		 								<input type="submit">
+		 							</td>
+	 							</tr>
+	 						</table>
+	 					</form>
+	 				</div>
+	 			</div></div>
+  			</div>
+
 	 	</div><!--Still in Blockgroup!-->
 	</div>
  </div>

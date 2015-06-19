@@ -37,7 +37,7 @@ if($stmt->fetch()) {
 	$fb = $ifb;
 	$twit = $itwit;
 	
-	$stmt->free_result();
+	$stmt->close();
 	
 	if((isset($_GET["firstname"]) || isset($_GET["lastname"]) || isset($_GET["email"])
 		|| isset($_GET["faculty"]) || isset($_GET["location"]) || isset($_GET["webpage"]) 
@@ -77,8 +77,6 @@ if($stmt->fetch()) {
 			WHERE id = ?;";
 		
 		$upd_stmt = $mysqli->prepare($prep_upd_stmt);
-		
-		//echo $mysqli->error;
 
 		$upd_stmt->bind_param('sssssssssi', $fname, $lname, $email, $fac, $loc, $webp, $lin, $fb, $twit, $uid);
 		
