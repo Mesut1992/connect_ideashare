@@ -76,6 +76,23 @@ include_once "includes/start-share.inc.php";
 		 					<div class="block-content white-color">
 			 				<h2>Information</h2><br>
 				 			<p>On this page you can share your ideas! If you have a facebook page for your idea already, do not forget to link it.</p>
+				 			<br><br>
+				 			<?php 
+		 						if($updated)
+		 							echo '
+								<div class="msg-success">
+			 						<p>Your idea and the photo were uploaded successfully!</p>
+			 					</div>
+									';
+		 						else{
+		 							if ($error) {
+		 								echo '<div class="msg-fail">
+			 						<p>' . $error_msg .  '</p></div><br><div class="msg-fail"><p>' .  $error_msg_final. '</p>
+			 					</div>';
+		 							}
+		 						}
+		 					?>
+
 		 				</div>		 	
 		 			</div>
 		 		</div>
@@ -90,7 +107,7 @@ include_once "includes/start-share.inc.php";
 		 			 	<!--Form to upload an idea-->
 		 			 	<!-- Enter here the URL in action, to which the user should go to if the idea is uploaded successfully-->
 		 			 <form action="<?php echo esc_url($_SERVER['PHP_SELF']); ?>"
-			 				method="post" name="ideas_form">
+			 				method="post" name="ideas_form" enctype="multipart/form-data">
 		 			 	<table>
 			 			 	<tr>				 						
 		 						<td>Category</td>
@@ -124,10 +141,11 @@ include_once "includes/start-share.inc.php";
 		 					</tr>	
 		 			 		<tr>
 		 			 			<td>
-		 			 				Upload a picture: 160px X 160px
+		 			 				Upload a picture<br>Format: 160px * 160px
 		 			 			</td>
 		 			 			<td>
-		 			 				<button>Upload Picture</button>
+		 			 				Select image to upload:
+								    <input type="file" name="fileToUpload" id="fileToUpload">						
 		 			 			</td>
 		 			 		</tr>			 			 	
 		 			 		<tr>
