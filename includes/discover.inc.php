@@ -4,21 +4,21 @@ include_once 'psl-config.php';
 
 if(isset($_GET["category"]) && isset($_GET["sort"]) && ($_GET["category"] != "All")) {
     $prep_stmt = "SELECT ideas_id, title, abstract, description, category, 
-    user_id, username, email FROM ideas, members
+    user_id, username, email, pic FROM ideas, members
     WHERE members.id = ideas.user_id AND category = ?;";
     $stmt = $mysqli->prepare($prep_stmt);
     $stmt->bind_param('s', $_GET["category"]);
 }
 else {
     $prep_stmt = "SELECT ideas_id, title, abstract, description, category, 
-    user_id, username, email FROM ideas, members
+    user_id, username, email, pic FROM ideas, members
     WHERE members.id = ideas.user_id;";
     $stmt = $mysqli->prepare($prep_stmt);
 }
 
 $stmt->execute();
 $stmt->bind_result($tideas_id ,$ttitle, $tabstract, $tdescription, $tcategory, 
-    $tuid, $tuname, $temail);
+    $tuid, $tuname, $temail, $pic);
 //$result = $mysqli->query($stmt);
 
 $ideas_id = array();
@@ -42,7 +42,7 @@ while($stmt->fetch()) {
     array_push($abstract, $tabstract);
     array_push($description, $tdescription);
     array_push($category, $tcategory);
-    array_push($picture, "pics/example/photo-original (2).jpg");
+    array_push($picture, $pic);
 
     $count++;
 }

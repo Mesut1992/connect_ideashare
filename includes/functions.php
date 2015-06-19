@@ -27,7 +27,7 @@ function sec_session_start() {
 //Function to compare the login details
 function login($email, $password, $mysqli){
 	//Using prepared statements means that SQL injection is not possible
-	if ($stmt = $mysqli->prepare("SELECT id, username, password, salt
+	if ($stmt = $mysqli->prepare("SELECT id, username, password, salt, uploadedPics
 		FROM members
 		WHERE email = ?
 		LIMIT 1")) {
@@ -36,7 +36,7 @@ function login($email, $password, $mysqli){
 		$stmt->store_result();
 
 		//get variables from result
-		$stmt->bind_result($user_id, $username, $db_password, $salt);
+		$stmt->bind_result($user_id, $username, $db_password, $salt, $uploadedpictures);
 		$stmt->fetch();
 
 		//hash the password with the unique salt.
@@ -52,7 +52,7 @@ function login($email, $password, $mysqli){
 				if ($db_password == $password) {
 					//password is right .. yeah 
 					//get the user-agent string of the user..
-					echo "es wird anscheinend eine session gesetzt... ";
+					//echo "es wird anscheinend eine session gesetzt... ";
 					$user_browser = $_SERVER['HTTP_USER_AGENT'];
 					//XSS protection
 					$user_id = preg_replace("/[^0-9]+/", "", $user_id);
@@ -61,6 +61,7 @@ function login($email, $password, $mysqli){
 					$username = preg_replace("/[^a-zA-Z0-9_\-]+/", "", $username);
 					$_SESSION['username'] = $username;
 					$_SESSION['login_string'] = hash('sha512', $password . $user_browser);
+					$_SESSION['uploadedpictures'] = $uploadedpictures;
 					//Login successful!
 					return true;
 				}else{

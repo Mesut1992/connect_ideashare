@@ -70,7 +70,6 @@ include_once '/includes/profile.inc.php';
 		 			<div class="left-side4 block grey-background" id="">
 		 				<div class="block-content white-color">
 		 					<?php 
-		 					
 		 						if($updated)
 		 							echo '
 								<div class="msg-success">
@@ -81,9 +80,7 @@ include_once '/includes/profile.inc.php';
 		 							echo '
 								<h3>You can change your data right here</h3>
 									';
-		 					
 		 					?>
-		 					
 		 					<?php echo ($disabled ? "" : '
 		 					<form action="profile.php" method="get">
 		 					') ?>

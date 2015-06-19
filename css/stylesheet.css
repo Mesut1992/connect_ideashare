@@ -283,14 +283,21 @@ div#container{
 
 .msg-success {
 	background-color: #1ABC9C;
-	
 	height: 2em;
-	
 	padding-top: 5px;
 }
 
 .msg-success p {
 	font-weight: bold;
-	
 	margin-left: 1em;
+}
+.msg-fail {
+  background-color: #BC361A;
+  height: 2em;
+  padding-top: 5px;
+}
+
+.msg-fail p {
+  font-weight: bold;
+  margin-left: 1em;
 }
